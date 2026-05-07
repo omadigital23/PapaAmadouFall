@@ -102,16 +102,14 @@ main {
 
 .hero {
   position: relative;
-  display: grid;
-  grid-template-columns: minmax(0, 0.9fr) minmax(430px, 1.1fr);
-  gap: clamp(28px, 4vw, 64px);
+  display: flex;
   min-height: 90vh;
   align-items: center;
   padding: 110px clamp(18px, 4vw, 56px) 72px;
   color: #fff;
   background:
-    radial-gradient(circle at 78% 18%, rgba(43, 125, 233, 0.18), transparent 28%),
-    linear-gradient(135deg, rgba(7, 16, 26, 1) 0%, rgba(9, 25, 38, 1) 54%, rgba(7, 16, 26, 1) 100%);
+    linear-gradient(90deg, rgba(7, 16, 26, 1) 0%, rgba(7, 16, 26, 0.97) 38%, rgba(7, 16, 26, 0.76) 58%, rgba(7, 16, 26, 0.28) 100%),
+    url("./assets/hero-operations-suite.png") center right / cover no-repeat;
 }
 
 .hero::after {
@@ -126,8 +124,8 @@ main {
 
 .hero-content {
   position: relative;
-  z-index: 2;
-  width: min(650px, 100%);
+  z-index: 1;
+  width: min(620px, 100%);
 }
 
 .eyebrow {
@@ -144,59 +142,33 @@ main {
 }
 
 h1 {
-  max-width: 650px;
+  max-width: 620px;
   margin: 0;
-  font-size: clamp(54px, 6.1vw, 92px);
-  line-height: 0.92;
+  font-size: clamp(52px, 5.8vw, 88px);
+  line-height: 0.94;
   letter-spacing: 0;
   text-wrap: balance;
 }
 
+h1 span {
+  display: block;
+}
+
 .hero-kicker {
-  max-width: 620px;
+  max-width: 600px;
   margin: 24px 0 0;
   color: #f7fafc;
-  font-size: clamp(24px, 2.5vw, 38px);
+  font-size: clamp(24px, 2.35vw, 36px);
   font-weight: 800;
   line-height: 1.05;
   text-wrap: balance;
 }
 
 .hero-text {
-  max-width: 620px;
+  max-width: 600px;
   margin: 20px 0 0;
   color: rgba(255, 255, 255, 0.78);
   font-size: 18px;
-}
-
-.hero-visual {
-  position: relative;
-  z-index: 1;
-  overflow: hidden;
-  border: 1px solid rgba(255, 255, 255, 0.12);
-  border-radius: 8px;
-  background: rgba(12, 25, 38, 0.72);
-  box-shadow: 0 30px 90px rgba(0, 0, 0, 0.34);
-}
-
-.hero-visual::before {
-  position: absolute;
-  inset: 0;
-  z-index: 1;
-  background:
-    linear-gradient(90deg, rgba(7, 16, 26, 0.18), transparent 34%),
-    linear-gradient(180deg, rgba(7, 16, 26, 0), rgba(7, 16, 26, 0.18));
-  content: "";
-  pointer-events: none;
-}
-
-.hero-visual img {
-  display: block;
-  width: 100%;
-  min-height: 520px;
-  object-fit: cover;
-  object-position: center;
-  opacity: 0.92;
 }
 
 .hero-actions,
@@ -598,20 +570,8 @@ h1 {
     grid-template-columns: 1fr;
   }
 
-  .hero {
-    grid-template-columns: minmax(0, 1fr);
-  }
-
   .hero-content {
-    width: min(720px, 100%);
-  }
-
-  .hero-visual {
-    max-width: 780px;
-  }
-
-  .hero-visual img {
-    min-height: 360px;
+    width: min(680px, 100%);
   }
 
   .signal-strip,
@@ -638,12 +598,12 @@ h1 {
     min-height: 86vh;
     padding-top: 138px;
     background:
-      radial-gradient(circle at 78% 12%, rgba(43, 125, 233, 0.16), transparent 30%),
-      linear-gradient(180deg, rgba(7, 16, 26, 1) 0%, rgba(8, 24, 36, 1) 100%);
+      linear-gradient(180deg, rgba(7, 16, 26, 1) 0%, rgba(7, 16, 26, 0.97) 62%, rgba(7, 16, 26, 0.86) 100%),
+      url("./assets/hero-operations-suite.png") center bottom / cover no-repeat;
   }
 
   h1 {
-    font-size: clamp(48px, 14vw, 58px);
+    font-size: clamp(42px, 13vw, 58px);
   }
 
   .hero-kicker {
@@ -652,14 +612,6 @@ h1 {
 
   .hero-text {
     font-size: 16px;
-  }
-
-  .hero-visual {
-    margin-top: 8px;
-  }
-
-  .hero-visual img {
-    min-height: 220px;
   }
 
   .signal-strip,
