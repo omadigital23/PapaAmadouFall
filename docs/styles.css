@@ -103,13 +103,31 @@ main {
 .hero {
   position: relative;
   display: flex;
+  overflow: hidden;
   min-height: clamp(650px, 78vh, 760px);
   align-items: center;
   padding: 98px clamp(18px, 4vw, 56px) 54px;
   color: #fff;
+  background: linear-gradient(135deg, #07101a 0%, #091726 58%, #07101a 100%);
+}
+
+.hero::before {
+  position: absolute;
+  top: 86px;
+  right: clamp(18px, 4vw, 56px);
+  bottom: 40px;
+  left: clamp(620px, 45vw, 860px);
+  z-index: 0;
+  border: 1px solid rgba(255, 255, 255, 0.07);
+  border-radius: 8px;
   background:
-    linear-gradient(90deg, rgba(7, 16, 26, 1) 0%, rgba(7, 16, 26, 0.99) 38%, rgba(7, 16, 26, 0.9) 64%, rgba(7, 16, 26, 0.72) 100%),
+    linear-gradient(90deg, rgba(7, 16, 26, 0.62), rgba(7, 16, 26, 0.08) 26%, rgba(7, 16, 26, 0.12) 100%),
     url("./assets/hero-operations-suite.png") center right / cover no-repeat;
+  box-shadow: none;
+  content: "";
+  filter: saturate(0.9) contrast(0.94);
+  opacity: 0.46;
+  pointer-events: none;
 }
 
 .hero::after {
@@ -117,6 +135,7 @@ main {
   right: 0;
   bottom: 0;
   left: 0;
+  z-index: 2;
   height: 1px;
   background: rgba(255, 255, 255, 0.16);
   content: "";
@@ -613,9 +632,11 @@ section[id] {
     min-height: auto;
     padding-top: 138px;
     padding-bottom: 54px;
-    background:
-      linear-gradient(180deg, rgba(7, 16, 26, 1) 0%, rgba(7, 16, 26, 0.98) 58%, rgba(7, 16, 26, 0.9) 100%),
-      url("./assets/hero-operations-suite.png") center bottom / cover no-repeat;
+    background: linear-gradient(180deg, #07101a 0%, #091726 100%);
+  }
+
+  .hero::before {
+    display: none;
   }
 
   h1 {
