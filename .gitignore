@@ -1,5 +1,30 @@
-qa-screenshots/
+# Dependencies
+node_modules/
+
+# Next.js
+.next/
+out/
+
+# Environment
+.env*
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+
+# Debug
+npm-debug.log*
+
+# System
 .DS_Store
 Thumbs.db
-*.log
 
+# QA
+qa-screenshots/
+
+# Personal documents - NEVER commit
+Papa_Amadou_Fall_Canada_Immigration_Master/
+
+# IDE
+*.swp
+*.swo
