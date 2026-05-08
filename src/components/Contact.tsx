@@ -5,12 +5,12 @@ export default function Contact() {
   return (
     <section
       id="contact"
-      className="flex items-center justify-between gap-8 px-[clamp(18px,4vw,56px)] py-[clamp(58px,7vw,92px)] text-white bg-deep-3 scroll-mt-[86px] max-[820px]:flex-col max-[820px]:items-start"
+      className="flex items-center justify-between gap-8 bg-deep-3 px-[clamp(18px,4vw,56px)] py-[clamp(58px,7vw,92px)] text-white scroll-mt-[96px] max-[820px]:flex-col max-[820px]:items-start"
       aria-labelledby="contact-title"
     >
       <ScrollReveal>
         <div>
-          <p className="m-0 mb-3 text-accent-light text-xs font-[900] tracking-[0.1em] uppercase">
+          <p className="m-0 mb-3 text-xs font-[900] uppercase tracking-[0.1em] text-accent-light">
             {CONTACT.eyebrow}
           </p>
           <h2
@@ -19,7 +19,9 @@ export default function Contact() {
           >
             {CONTACT.heading}
           </h2>
-          <p className="max-w-[760px] text-white/72 text-[17px]">{CONTACT.text}</p>
+          <p className="max-w-[760px] text-[17px] leading-relaxed text-white/72">
+            {CONTACT.text}
+          </p>
         </div>
       </ScrollReveal>
 
@@ -28,25 +30,36 @@ export default function Contact() {
           <a
             id="contact-email-btn"
             href={`mailto:${SITE.email}`}
-            className="inline-flex min-h-[46px] items-center justify-center px-[18px] py-3 rounded-[7px] text-sm font-[900] no-underline bg-accent border border-accent text-white transition-all duration-200 hover:-translate-y-0.5 hover:bg-accent-hover"
+            className="inline-flex min-h-[46px] items-center justify-center rounded-[7px] border border-accent bg-accent px-[18px] py-3 text-sm font-[900] text-white no-underline transition-all duration-200 hover:-translate-y-0.5 hover:bg-accent-hover"
           >
             Email
+          </a>
+          <a
+            id="contact-linkedin-btn"
+            href={SITE.linkedin}
+            target="_blank"
+            rel="noreferrer"
+            className="inline-flex min-h-[46px] items-center justify-center rounded-[7px] border border-white/20 bg-white/8 px-[18px] py-3 text-sm font-[900] text-white no-underline transition-all duration-200 hover:-translate-y-0.5 hover:border-white/48 hover:bg-white/14"
+          >
+            LinkedIn
           </a>
           <a
             id="contact-github-btn"
             href={SITE.github}
             target="_blank"
             rel="noreferrer"
-            className="inline-flex min-h-[46px] items-center justify-center px-[18px] py-3 rounded-[7px] text-sm font-[900] no-underline bg-white/8 border border-white/20 text-white transition-all duration-200 hover:-translate-y-0.5 hover:border-white/48 hover:bg-white/14"
+            className="inline-flex min-h-[46px] items-center justify-center rounded-[7px] border border-white/20 bg-white/8 px-[18px] py-3 text-sm font-[900] text-white no-underline transition-all duration-200 hover:-translate-y-0.5 hover:border-white/48 hover:bg-white/14"
           >
             GitHub
           </a>
           <a
-            id="contact-portfolio-btn"
-            href={SITE.url}
-            className="inline-flex min-h-[46px] items-center justify-center px-[18px] py-3 rounded-[7px] text-sm font-[900] no-underline bg-white/8 border border-white/20 text-white transition-all duration-200 hover:-translate-y-0.5 hover:border-white/48 hover:bg-white/14"
+            id="contact-cv-btn"
+            href={SITE.cv}
+            target="_blank"
+            rel="noreferrer"
+            className="inline-flex min-h-[46px] items-center justify-center rounded-[7px] border border-white/20 bg-white/8 px-[18px] py-3 text-sm font-[900] text-white no-underline transition-all duration-200 hover:-translate-y-0.5 hover:border-white/48 hover:bg-white/14"
           >
-            Portfolio
+            CV
           </a>
         </div>
       </ScrollReveal>

@@ -13,9 +13,9 @@ Use one of these safe options:
 
 ## Option A - Publish as a Portfolio Repository
 
-Recommended repository name:
+Repository:
 
-`papa-amadou-fall-portfolio`
+`omadigital23/PapaAmadouFall`
 
 Suggested commands after GitHub authentication:
 
@@ -23,8 +23,9 @@ Suggested commands after GitHub authentication:
 cd "C:\Users\fallp\Music\bank of document\Papa_Amadou_Fall_GitHub_Portfolio"
 git init
 git add .
-git commit -m "Create bilingual technical support portfolio"
-gh repo create papa-amadou-fall-portfolio --public --source . --remote origin --push
+git commit -m "Polish bilingual technical support portfolio"
+git remote add origin https://github.com/omadigital23/PapaAmadouFall.git
+git push -u origin main
 ```
 
 Then enable GitHub Pages:
@@ -40,9 +41,9 @@ Create a repository with the exact same name as your GitHub username.
 
 Example:
 
-If your GitHub username is `fallpape`, create:
+If your GitHub username is `omadigital23`, create:
 
-`fallpape/fallpape`
+`omadigital23/omadigital23`
 
 Then copy:
 
@@ -69,4 +70,3 @@ Replace these placeholders:
 3. `it-support-automation-scripts`
 4. `oma-digital-portfolio`
 5. `papa-amadou-fall-portfolio`
-

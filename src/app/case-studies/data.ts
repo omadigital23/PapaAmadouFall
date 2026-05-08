@@ -6,28 +6,28 @@ export const CASE_STUDIES: CaseStudy[] = [
     tag: "Support System",
     title: "Bilingual Support Ticket Simulator",
     intro:
-      "A planned tool for classifying support tickets, choosing diagnostic steps, and drafting professional replies in English and French.",
+      "A support workflow concept for classifying tickets, selecting diagnostic steps, and drafting professional replies in English and French.",
     sections: [
       {
         heading: "Purpose",
         content:
-          "Create a small support workflow tool that demonstrates ticket triage, priority selection, escalation judgment, and bilingual customer communication.",
+          "Show the habits behind strong first-line support: understand the symptom, choose the right checks, communicate clearly, and know when to escalate.",
       },
       {
-        heading: "Core Features",
+        heading: "Workflow",
         content: "",
         list: [
-          "Ticket categories: internet, Wi-Fi, modem, router, telephony, account access.",
-          "Priority levels: low, normal, urgent.",
-          "Suggested troubleshooting checklist.",
+          "Ticket categories: internet, Wi-Fi, modem, router, telephony, and account access.",
+          "Priority levels: low, normal, urgent, and escalation required.",
+          "Troubleshooting checklist tied to symptoms and device context.",
           "Customer response templates in English and French.",
-          "Escalation recommendation when the issue requires level 2 support.",
+          "Escalation recommendation when level 2 support is needed.",
         ],
       },
       {
-        heading: "Skills Demonstrated",
+        heading: "Value",
         content:
-          "Technical support workflow thinking, bilingual communication, React data structures, customer empathy, and structured documentation.",
+          "The project demonstrates structured support thinking, bilingual communication, and the ability to turn repeated issues into repeatable workflows.",
       },
     ],
   },
@@ -36,15 +36,15 @@ export const CASE_STUDIES: CaseStudy[] = [
     tag: "Documentation",
     title: "Technical Support Knowledge Base",
     intro:
-      "Structured troubleshooting documentation for connectivity, Wi-Fi, DNS, modem/router support, and escalation decisions.",
+      "Troubleshooting documentation for connectivity, Wi-Fi, DNS, modem/router support, device checks, and escalation decisions.",
     sections: [
       {
         heading: "Purpose",
         content:
-          "Show clear technical documentation that a support agent can use to resolve issues consistently and explain steps to non-technical users.",
+          "Give support teams a consistent reference for resolving common issues and explaining next steps to non-technical users.",
       },
       {
-        heading: "Suggested Sections",
+        heading: "Sections",
         content: "",
         list: [
           "Internet connection down.",
@@ -56,9 +56,9 @@ export const CASE_STUDIES: CaseStudy[] = [
         ],
       },
       {
-        heading: "Portfolio Value",
+        heading: "Value",
         content:
-          "This project supports the User Support Technician profile by proving structured diagnostic thinking and customer-friendly explanation.",
+          "This supports the IT support profile by proving clear diagnostic thinking, customer-friendly explanation, and documentation discipline.",
       },
     ],
   },
@@ -67,15 +67,15 @@ export const CASE_STUDIES: CaseStudy[] = [
     tag: "Automation",
     title: "OMA Digital Automation",
     intro:
-      "Practical automation concepts for lead capture, CRM handoff, API workflows, and small-business response systems.",
+      "Practical automation concepts for lead capture, CRM handoff, API workflows, notifications, and small-business response systems.",
     sections: [
       {
         heading: "Purpose",
         content:
-          "Use automation to help small businesses capture leads, qualify prospects, notify teams, and respond faster without losing human control.",
+          "Use automation to help small businesses capture requests, qualify prospects, notify teams, and respond faster while keeping human control.",
       },
       {
-        heading: "Relevant Workflows",
+        heading: "Workflows",
         content: "",
         list: [
           "Website form to CRM workflow.",
@@ -85,7 +85,7 @@ export const CASE_STUDIES: CaseStudy[] = [
         ],
       },
       {
-        heading: "Portfolio Value",
+        heading: "Value",
         content:
           "This shows the transition from support technician to automation-aware technical operator with business process understanding.",
       },
@@ -107,14 +107,14 @@ export const CASE_STUDIES: CaseStudy[] = [
         heading: "Live Projects",
         content: "",
         list: [
-          "OMA Digital website — omadigital.net",
-          "SOJIF Consulting website — sojifconsulting.com",
-          "Nubia Aura website — nubiaaura.com",
-          "Technical support ticket simulator.",
+          "OMA Digital website - omadigital.net",
+          "SOJIF Consulting website - sojifconsulting.com",
+          "Nubia Aura website - nubiaaura.com",
+          "Technical support workflow concepts.",
         ],
       },
       {
-        heading: "Portfolio Value",
+        heading: "Value",
         content:
           "The goal is not to claim senior developer status. It shows credible technical range for web support and junior technical roles.",
       },

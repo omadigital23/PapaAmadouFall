@@ -2,7 +2,7 @@ param(
     [Parameter(Mandatory=$true)]
     [string]$GitHubUsername,
 
-    [string]$RepoName = "papa-amadou-fall-portfolio"
+    [string]$RepoName = "PapaAmadouFall"
 )
 
 $ErrorActionPreference = "Stop"
@@ -29,4 +29,3 @@ Write-Host "Pushing to GitHub. If Git asks you to sign in, use the browser login
 Write-Host ""
 
 git push -u origin main
-

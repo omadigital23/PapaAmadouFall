@@ -4,22 +4,28 @@ import OperationsConsole from "./OperationsConsole";
 export default function Hero() {
   return (
     <section
-      className="relative flex overflow-hidden min-h-[clamp(650px,78vh,760px)] items-center px-[clamp(18px,4vw,56px)] pt-[98px] pb-[54px] text-white bg-[linear-gradient(135deg,#07101a_0%,#091726_58%,#07101a_100%)] max-[820px]:min-h-auto max-[820px]:pt-[138px] max-[820px]:pb-[54px] max-[820px]:bg-[linear-gradient(180deg,#07101a_0%,#091726_100%)]"
+      className="relative flex min-h-[clamp(660px,78vh,780px)] items-center overflow-hidden bg-[linear-gradient(135deg,#07101a_0%,#091726_42%,#0c1e32_72%,#07101a_100%)] px-[clamp(18px,4vw,56px)] pb-[54px] pt-[112px] text-white max-[900px]:min-h-auto max-[900px]:pt-[156px]"
       aria-labelledby="hero-title"
     >
-      {/* Subtle mesh gradient */}
-      <div className="absolute inset-0 opacity-30 pointer-events-none bg-[radial-gradient(ellipse_80%_50%_at_80%_-20%,rgba(13,124,102,0.15),transparent)]" />
+      <div
+        className="absolute inset-0 pointer-events-none opacity-[0.18]"
+        style={{
+          backgroundImage:
+            "linear-gradient(rgba(255,255,255,0.12) 1px, transparent 1px), linear-gradient(90deg, rgba(255,255,255,0.1) 1px, transparent 1px)",
+          backgroundSize: "44px 44px",
+          maskImage: "linear-gradient(90deg, black, transparent 82%)",
+        }}
+      />
 
-      <div className="relative z-[1] flex items-center gap-[clamp(40px,6vw,80px)] w-full max-w-[1320px] mx-auto max-[820px]:flex-col">
-        {/* Text */}
-        <div className="w-full max-w-[560px] shrink-0">
-          <p className="m-0 mb-3 text-accent-light text-xs font-[900] tracking-[0.1em] uppercase">
+      <div className="relative z-[1] mx-auto flex w-full max-w-[1320px] items-center gap-[clamp(38px,6vw,82px)] max-[900px]:flex-col max-[900px]:items-start">
+        <div className="w-full max-w-[600px] shrink-0">
+          <p className="m-0 mb-3 text-xs font-[900] uppercase tracking-[0.1em] text-accent-light">
             {HERO.eyebrow}
           </p>
 
           <h1
             id="hero-title"
-            className="m-0 text-[clamp(48px,4.9vw,76px)] leading-[0.98] tracking-normal max-[820px]:text-[clamp(40px,11vw,52px)]"
+            className="m-0 text-[clamp(48px,4.9vw,76px)] font-[900] leading-[0.98] tracking-normal max-[900px]:text-[clamp(40px,11vw,54px)]"
             style={{ textWrap: "balance" }}
           >
             <span className="block">{HERO.firstName}</span>
@@ -27,44 +33,67 @@ export default function Hero() {
           </h1>
 
           <p
-            className="max-w-[540px] mt-5 text-[#f7fafc] text-[clamp(22px,1.9vw,30px)] font-[800] leading-[1.12] max-[820px]:max-w-[360px] max-[820px]:text-[23px]"
+            className="mt-5 max-w-[560px] text-[clamp(20px,1.7vw,27px)] font-[800] leading-[1.16] text-[#f7fafc] max-[900px]:text-[20px]"
             style={{ textWrap: "balance" }}
           >
             {HERO.kicker}
           </p>
 
-          <p className="max-w-[560px] mt-4 text-white/78 text-[17px] max-[820px]:text-base">
+          <p className="mt-4 max-w-[590px] text-[17px] leading-relaxed text-white/78 max-[900px]:text-base">
             {HERO.text}
           </p>
 
-          <div className="flex flex-wrap gap-3 mt-6" aria-label="Primary links">
+          <div className="mt-6 flex flex-wrap gap-3" aria-label="Primary links">
             <a
               id="hero-contact-btn"
               href={`mailto:${SITE.email}`}
-              className="inline-flex min-h-[46px] items-center justify-center px-[18px] py-3 rounded-[7px] text-sm font-[900] no-underline bg-accent border border-accent text-white transition-all duration-200 hover:-translate-y-0.5 hover:bg-accent-hover focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-accent-light"
+              className="inline-flex min-h-[46px] items-center justify-center rounded-[7px] border border-accent bg-accent px-6 py-3 text-sm font-[900] text-white no-underline shadow-[0_4px_14px_rgba(13,124,102,0.3)] transition-all duration-200 hover:-translate-y-0.5 hover:bg-accent-hover hover:shadow-[0_8px_24px_rgba(13,124,102,0.4)] focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-accent-light"
             >
               Contact
+            </a>
+            <a
+              id="hero-cv-btn"
+              href={SITE.cv}
+              target="_blank"
+              rel="noreferrer"
+              className="btn-cv"
+              aria-label="Open Papa Amadou Fall CV PDF"
+            >
+              <svg
+                width="16"
+                height="16"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                strokeWidth="2.2"
+                strokeLinecap="round"
+                strokeLinejoin="round"
+                aria-hidden="true"
+              >
+                <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4" />
+                <polyline points="7 10 12 15 17 10" />
+                <line x1="12" y1="15" x2="12" y2="3" />
+              </svg>
+              CV
             </a>
             <a
               id="hero-github-btn"
               href={SITE.github}
               target="_blank"
               rel="noreferrer"
-              className="inline-flex min-h-[46px] items-center justify-center px-[18px] py-3 rounded-[7px] text-sm font-[900] no-underline bg-white/8 border border-white/20 text-white transition-all duration-200 hover:-translate-y-0.5 hover:border-white/48 hover:bg-white/14"
+              className="inline-flex min-h-[46px] items-center justify-center rounded-[7px] border border-white/20 bg-white/8 px-6 py-3 text-sm font-[900] text-white no-underline transition-all duration-200 hover:-translate-y-0.5 hover:border-white/48 hover:bg-white/14"
             >
               GitHub
             </a>
           </div>
         </div>
 
-        {/* Console Visual */}
-        <div className="flex-1 flex justify-end max-[820px]:hidden">
+        <div className="flex flex-1 justify-end max-[900px]:w-full max-[900px]:justify-center">
           <OperationsConsole />
         </div>
       </div>
 
-      {/* Bottom line */}
-      <div className="absolute right-0 bottom-0 left-0 z-[2] h-px bg-white/16" />
+      <div className="absolute bottom-0 left-0 right-0 z-[2] h-px bg-gradient-to-r from-transparent via-white/20 to-transparent" />
     </section>
   );
 }

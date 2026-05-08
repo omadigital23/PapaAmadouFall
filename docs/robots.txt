@@ -1,0 +1,4 @@
+User-Agent: *
+Allow: /
+
+Sitemap: https://omadigital23.github.io/PapaAmadouFall/sitemap.xml

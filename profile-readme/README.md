@@ -55,7 +55,6 @@ My long-term goal is to grow into software development, automation engineering, 
 ## Contact
 
 - Location: Campbell River, British Columbia, Canada
-- Email: fallpape199@gmail.com
-- LinkedIn: `add your LinkedIn URL`
-- Portfolio: `add GitHub Pages URL`
-
+- Email: omadigital23@gmail.com
+- LinkedIn: https://www.linkedin.com/in/papa-amadou-bb95a01a1
+- Portfolio: https://omadigital23.github.io/PapaAmadouFall/

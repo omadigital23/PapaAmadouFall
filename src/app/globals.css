@@ -37,17 +37,6 @@
   }
 }
 
-@keyframes slideInRight {
-  from {
-    opacity: 0;
-    transform: translateX(40px);
-  }
-  to {
-    opacity: 1;
-    transform: translateX(0);
-  }
-}
-
 @keyframes staggerIn {
   from {
     opacity: 0;
@@ -69,24 +58,36 @@
   }
 }
 
+@keyframes pulseDot {
+  0%,
+  100% {
+    opacity: 1;
+    transform: scale(1);
+  }
+  50% {
+    opacity: 0.6;
+    transform: scale(0.85);
+  }
+}
+
 @keyframes float {
   0%,
   100% {
-    transform: translateY(0px);
+    transform: translateY(0);
   }
   50% {
     transform: translateY(-6px);
   }
 }
 
-@keyframes countUp {
+@keyframes scoreReveal {
   from {
     opacity: 0;
-    transform: translateY(8px);
+    transform: translateY(6px) scale(0.96);
   }
   to {
     opacity: 1;
-    transform: translateY(0);
+    transform: translateY(0) scale(1);
   }
 }
 
@@ -130,6 +131,100 @@ p {
 .reveal.visible {
   opacity: 1;
   transform: translateY(0);
+}
+
+.exp-tag-csat {
+  background: #e1f5ee;
+  color: #0f6e56;
+}
+
+.exp-tag-bilingual {
+  background: #eeedfe;
+  color: #3c3489;
+}
+
+.exp-tag-logistics {
+  background: #faeeda;
+  color: #854f0b;
+}
+
+.exp-tag-telecom {
+  background: #e6f1fb;
+  color: #185fa5;
+}
+
+.exp-tag-stock {
+  background: #fdf0e0;
+  color: #633806;
+}
+
+.exp-tag-web {
+  background: #f1efe8;
+  color: #444441;
+}
+
+.exp-tag-docs {
+  background: #eef2f7;
+  color: #344256;
+}
+
+.cap-tag-support,
+.cert-tag-employment {
+  background: #e1f5ee;
+  color: #0f6e56;
+}
+
+.cap-tag-ops {
+  background: #eeedfe;
+  color: #3c3489;
+}
+
+.cap-tag-logistics,
+.cert-tag-internship {
+  background: #faeeda;
+  color: #854f0b;
+}
+
+.cap-tag-systems,
+.cert-tag-contract {
+  background: #e6f1fb;
+  color: #185fa5;
+}
+
+.cap-tag-growth {
+  background: #fdf0e0;
+  color: #633806;
+}
+
+.cap-tag-docs {
+  background: #eef2f7;
+  color: #344256;
+}
+
+.btn-cv {
+  display: inline-flex;
+  min-height: 46px;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  border: 1px solid rgba(255, 255, 255, 0.28);
+  border-radius: 7px;
+  background: rgba(255, 255, 255, 0.1);
+  color: #fff;
+  padding: 0 20px;
+  font-size: 14px;
+  font-weight: 900;
+  text-decoration: none;
+  transition:
+    background 0.2s,
+    border-color 0.2s,
+    transform 0.2s;
+}
+
+.btn-cv:hover {
+  border-color: rgba(255, 255, 255, 0.5);
+  background: rgba(255, 255, 255, 0.18);
+  transform: translateY(-2px);
 }
 
 @media (prefers-reduced-motion: reduce) {

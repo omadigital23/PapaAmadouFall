@@ -14,18 +14,69 @@ export const metadata: Metadata = {
   title: SITE.title,
   description: SITE.description,
   metadataBase: new URL(SITE.url),
+  keywords: [
+    "Papa Amadou Fall",
+    "Bilingual Technical Support Specialist",
+    "IT Support",
+    "Help Desk",
+    "SaaS Support",
+    "French English Support",
+    "React Next.js Web Support",
+  ],
+  authors: [{ name: SITE.name, url: SITE.url }],
+  creator: SITE.name,
   openGraph: {
+    type: "profile",
+    url: SITE.url,
     title: SITE.title,
     description: SITE.description,
-    url: SITE.url,
     siteName: SITE.name,
-    type: "website",
+    locale: "en_CA",
+    images: [
+      {
+        url: `${SITE.url}assets/papa-amadou-fall-profile-logo.svg`,
+        width: 512,
+        height: 512,
+        alt: SITE.name,
+      },
+    ],
+  },
+  twitter: {
+    card: "summary",
+    title: SITE.title,
+    description: SITE.description,
+    images: [`${SITE.url}assets/papa-amadou-fall-profile-logo.svg`],
+  },
+  robots: { index: true, follow: true },
+  alternates: { canonical: SITE.url },
+};
+
+const jsonLd = {
+  "@context": "https://schema.org",
+  "@type": "Person",
+  name: "Papa Amadou Fall",
+  url: SITE.url,
+  email: SITE.email,
+  jobTitle: "Bilingual Technical Support Specialist",
+  knowsLanguage: ["en", "fr"],
+  sameAs: [SITE.github, SITE.linkedin],
+  address: {
+    "@type": "PostalAddress",
+    addressLocality: "Campbell River",
+    addressRegion: "BC",
+    addressCountry: "CA",
   },
 };
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
     <html lang="en" className={inter.variable}>
+      <head>
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
+        />
+      </head>
       <body className="font-sans">{children}</body>
     </html>
   );
