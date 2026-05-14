@@ -66,17 +66,17 @@ export default function Evidence() {
               </div>
 
               <div
-                className="grid grid-cols-4 gap-3 p-5 max-[780px]:grid-cols-2 max-[520px]:grid-cols-1"
+                className="grid grid-cols-[repeat(auto-fit,minmax(190px,1fr))] gap-3 p-5"
                 aria-label="n8n deployment flow"
               >
                 {INFRASTRUCTURE_STEPS.map((step, index) => (
                   <div
                     key={step.label}
-                    className="relative min-h-[164px] rounded-lg border border-white/10 bg-white/[0.06] p-4"
+                    className="relative min-h-[164px] min-w-0 rounded-lg border border-white/10 bg-white/[0.06] p-4"
                   >
                     {index < INFRASTRUCTURE_STEPS.length - 1 && (
                       <span
-                        className="absolute right-[-14px] top-1/2 h-px w-[14px] bg-accent-light/60 max-[780px]:hidden"
+                        className="absolute right-[-14px] top-1/2 hidden h-px w-[14px] bg-accent-light/60 min-[1180px]:block"
                         aria-hidden="true"
                       />
                     )}
@@ -86,7 +86,9 @@ export default function Evidence() {
                     <span className="mt-4 block text-[11px] font-[900] uppercase tracking-[0.12em] text-accent-light">
                       {step.label}
                     </span>
-                    <strong className="mt-1 block text-[18px] leading-[1.1]">{step.value}</strong>
+                    <strong className="mt-1 block break-words text-[18px] leading-[1.1] [overflow-wrap:anywhere]">
+                      {step.value}
+                    </strong>
                     <p className="m-0 mt-3 text-[12.5px] leading-relaxed text-white/58">
                       {step.detail}
                     </p>
