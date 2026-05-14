@@ -248,6 +248,24 @@ export const PROJECTS: Project[] = [
     style: "live",
     external: true,
   },
+  {
+    tag: "Learning App",
+    title: "Cloud Cert",
+    description:
+      "Interactive Google Cloud networking study path with modules, quiz tracking, topology concepts, and bilingual interface.",
+    href: "https://cloud-cert.vercel.app/",
+    style: "live",
+    external: true,
+  },
+  {
+    tag: "SaaS Login",
+    title: "OMA Compta",
+    description:
+      "SYSCOHADA accounting platform login experience for West African SMEs, with clean product positioning and secure access flow.",
+    href: "https://oma-compta.vercel.app/login",
+    style: "live",
+    external: true,
+  },
 ];
 
 export const EVIDENCE_HEADER = {
@@ -264,9 +282,9 @@ export const EVIDENCE_METRICS: EvidenceMetric[] = [
     detail: "Telecom N1, ticketing, troubleshooting, escalation, and bilingual customer handling.",
   },
   {
-    value: "3",
+    value: "5",
     label: "Live sites",
-    detail: "Business, consulting, and commerce websites with responsive production delivery.",
+    detail: "Business, consulting, commerce, learning, and SaaS surfaces in production.",
   },
   {
     value: "n8n",
@@ -350,6 +368,24 @@ export const PROJECT_PROOFS: ProjectProof[] = [
     href: "https://www.nubiaaura.com/en",
     image: "/PapaAmadouFall/assets/evidence-nubia-aura.webp",
     alt: "Nubia Aura live website screenshot showing fashion catalog hero section",
+  },
+  {
+    title: "Cloud Cert",
+    category: "Learning platform",
+    description:
+      "Google Cloud networking study interface with module planning, quiz progress, target topology, and bilingual controls.",
+    href: "https://cloud-cert.vercel.app/",
+    image: "/PapaAmadouFall/assets/evidence-cloud-cert.webp",
+    alt: "Cloud Cert live website screenshot showing Google Cloud networking study dashboard",
+  },
+  {
+    title: "OMA Compta",
+    category: "Accounting SaaS",
+    description:
+      "SYSCOHADA accounting login experience for SMEs, with product positioning, clean form layout, and secure access flow.",
+    href: "https://oma-compta.vercel.app/login",
+    image: "/PapaAmadouFall/assets/evidence-oma-compta.webp",
+    alt: "OMA Compta live website screenshot showing SYSCOHADA accounting login page",
   },
 ];
 
