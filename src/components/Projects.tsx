@@ -5,7 +5,7 @@ export default function Projects() {
   return (
     <section
       id="projects"
-      className="bg-soft px-[clamp(18px,4vw,56px)] py-[clamp(62px,8vw,104px)] scroll-mt-[96px]"
+      className="scroll-mt-[150px] bg-soft px-[clamp(18px,4vw,56px)] py-[clamp(62px,8vw,104px)] min-[900px]:scroll-mt-[96px]"
       aria-labelledby="projects-title"
     >
       <ScrollReveal>

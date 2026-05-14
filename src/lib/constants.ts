@@ -20,6 +20,33 @@ export interface Project {
   external?: boolean;
 }
 
+export interface EvidenceMetric {
+  value: string;
+  label: string;
+  detail: string;
+}
+
+export interface EvidenceItem {
+  tag: string;
+  title: string;
+  description: string;
+}
+
+export interface ProjectProof {
+  title: string;
+  category: string;
+  description: string;
+  href: string;
+  image: string;
+  alt: string;
+}
+
+export interface InfrastructureStep {
+  label: string;
+  value: string;
+  detail: string;
+}
+
 export interface ExperienceTag {
   label: string;
   style: string;
@@ -54,7 +81,7 @@ export const SITE = {
   name: "Papa Amadou Fall",
   title: "Papa Amadou Fall | Bilingual Technical Support Specialist",
   description:
-    "Bilingual French-English technical support specialist focused on IT support, telecom troubleshooting, SaaS support, web support, and practical automation.",
+    "Bilingual French-English technical support specialist focused on IT support, telecom troubleshooting, SaaS support, web support, and practical n8n automation infrastructure.",
   url: "https://omadigital23.github.io/PapaAmadouFall/",
   basePath: "/PapaAmadouFall",
   github: "https://github.com/omadigital23",
@@ -73,8 +100,8 @@ export const AVAILABILITY = {
 export const NAV_LINKS = [
   { label: "Profile", href: "#profile" },
   { label: "Projects", href: "#projects" },
-  { label: "Experience", href: "#experience" },
   { label: "Proof", href: "#proof" },
+  { label: "Experience", href: "#experience" },
   { label: "Contact", href: "#contact" },
 ] as const;
 
@@ -82,9 +109,9 @@ export const HERO = {
   eyebrow: "Bilingual French-English | Technical Support | Web Support",
   firstName: "Papa Amadou",
   lastName: "Fall",
-  kicker: "Technical Support Specialist with web and automation depth.",
+  kicker: "Technical Support Specialist with verified web, DNS, HTTPS, and automation depth.",
   text:
-    "I help support teams diagnose issues clearly, document cleanly, communicate in French and English, and bring enough web and automation knowledge to work confidently with modern SaaS and IT environments.",
+    "I help support teams diagnose issues clearly, document cleanly, communicate in French and English, and bring practical infrastructure knowledge across SaaS, DNS, reverse proxy, HTTPS, and n8n automation environments.",
 } as const;
 
 export const SIGNALS: SignalItem[] = [
@@ -105,8 +132,8 @@ export const SIGNALS: SignalItem[] = [
   },
   {
     number: "04",
-    title: "Reference-ready",
-    description: "Documented employment history and work samples available for recruiter review.",
+    title: "Evidence-backed",
+    description: "CV, live sites, case studies, LinkedIn, and infrastructure proof for recruiter review.",
   },
 ];
 
@@ -151,7 +178,7 @@ export const CAPABILITIES: Capability[] = [
     tagStyle: "cap-tag-growth",
     title: "Web & Automation",
     description:
-      "JavaScript, TypeScript, React, Next.js, PHP, Python, MySQL, APIs, and workflow automation with n8n.",
+      "JavaScript, TypeScript, React, Next.js, PHP, Python, MySQL, APIs, n8n, Nginx, DNS, HTTPS, and workflow automation.",
   },
 ];
 
@@ -223,6 +250,109 @@ export const PROJECTS: Project[] = [
   },
 ];
 
+export const EVIDENCE_HEADER = {
+  eyebrow: "Evidence Layer",
+  heading: "Proof that the support profile is backed by real technical delivery.",
+  text:
+    "The portfolio now connects customer support discipline with visible delivery: live websites, automation infrastructure, DNS/HTTPS deployment, and documented case studies.",
+} as const;
+
+export const EVIDENCE_METRICS: EvidenceMetric[] = [
+  {
+    value: "5+",
+    label: "Years support",
+    detail: "Telecom N1, ticketing, troubleshooting, escalation, and bilingual customer handling.",
+  },
+  {
+    value: "3",
+    label: "Live sites",
+    detail: "Business, consulting, and commerce websites with responsive production delivery.",
+  },
+  {
+    value: "n8n",
+    label: "Self-hosted",
+    detail: "Cloud VM, Nginx reverse proxy, DNS, HTTPS, and secure routing to the service.",
+  },
+  {
+    value: "FR/EN",
+    label: "Bilingual",
+    detail: "Clear written and spoken support communication for users and teams.",
+  },
+];
+
+export const INFRASTRUCTURE_STEPS: InfrastructureStep[] = [
+  {
+    label: "DNS",
+    value: "n8n.omadigital.net",
+    detail: "Custom subdomain configured for external access.",
+  },
+  {
+    label: "Edge",
+    value: "Nginx",
+    detail: "Reverse proxy routes traffic to the internal n8n service.",
+  },
+  {
+    label: "Security",
+    value: "HTTPS",
+    detail: "Encrypted browser access for the automation endpoint.",
+  },
+  {
+    label: "Service",
+    value: "n8n",
+    detail: "Self-hosted workflow automation running on a cloud VM.",
+  },
+];
+
+export const EVIDENCE_ITEMS: EvidenceItem[] = [
+  {
+    tag: "Infrastructure",
+    title: "n8n self-hosting",
+    description:
+      "Configured a cloud VM, DNS, Nginx reverse proxy, HTTPS access, and secure routing to an internal n8n service.",
+  },
+  {
+    tag: "Support Transfer",
+    title: "Operational troubleshooting",
+    description:
+      "The same method used in customer support appears in the technical work: isolate symptoms, verify services, document the route, and escalate only when needed.",
+  },
+  {
+    tag: "Delivery",
+    title: "Live production surfaces",
+    description:
+      "The portfolio links to deployed websites and written case studies instead of relying only on claims.",
+  },
+];
+
+export const PROJECT_PROOFS: ProjectProof[] = [
+  {
+    title: "OMA Digital",
+    category: "Automation agency platform",
+    description: "Web, mobile, AI automation positioning, service pages, lead capture, and live business presence.",
+    href: "https://www.omadigital.net/en",
+    image: "/PapaAmadouFall/assets/evidence-oma-digital.webp",
+    alt: "OMA Digital live website screenshot showing automation agency hero section",
+  },
+  {
+    title: "SOJIF Consulting",
+    category: "Consulting website",
+    description:
+      "Corporate site for legal, finance, business structuring, recruitment, and digitalization services.",
+    href: "https://www.sojifconsulting.com/en",
+    image: "/PapaAmadouFall/assets/evidence-sojif-consulting.webp",
+    alt: "SOJIF Consulting live website screenshot showing business structuring and performance hero section",
+  },
+  {
+    title: "Nubia Aura",
+    category: "Commerce platform",
+    description:
+      "Fashion and tailoring platform with product discovery, catalog presentation, and customer support paths.",
+    href: "https://www.nubiaaura.com/en",
+    image: "/PapaAmadouFall/assets/evidence-nubia-aura.webp",
+    alt: "Nubia Aura live website screenshot showing fashion catalog hero section",
+  },
+];
+
 export const EXPERIENCE_HEADER = {
   eyebrow: "Experience",
   heading: "Customer-facing support, workplace reliability, and technical range.",
@@ -277,8 +407,8 @@ export const EXPERIENCE_NOTE =
   "Professional continuity across technical support, customer operations, logistics, documentation, and web maintenance. Employment references and supporting documents can be shared privately when appropriate.";
 
 export const CERTIFICATIONS_HEADER = {
-  eyebrow: "Proof & References",
-  heading: "Credible evidence without exposing private documents publicly.",
+  eyebrow: "References",
+  heading: "Private employment proof for verified recruiter review.",
   note:
     "Employment certificates, reference material, and supporting documents are available privately for recruiters and verified hiring processes.",
 } as const;

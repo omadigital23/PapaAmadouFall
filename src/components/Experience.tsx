@@ -7,7 +7,7 @@ export default function Experience() {
   return (
     <section
       id="experience"
-      className="bg-white px-[clamp(18px,4vw,56px)] py-[clamp(62px,8vw,104px)] scroll-mt-[96px]"
+      className="scroll-mt-[150px] bg-white px-[clamp(18px,4vw,56px)] py-[clamp(62px,8vw,104px)] min-[900px]:scroll-mt-[96px]"
       aria-labelledby="experience-title"
     >
       <ScrollReveal>

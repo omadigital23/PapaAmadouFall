@@ -72,7 +72,7 @@ export const CASE_STUDIES: CaseStudy[] = [
       {
         heading: "Purpose",
         content:
-          "Use automation to help small businesses capture requests, qualify prospects, notify teams, and respond faster while keeping human control.",
+          "Use automation and reliable infrastructure to help small businesses capture requests, qualify prospects, notify teams, and respond faster while keeping human control.",
       },
       {
         heading: "Workflows",
@@ -82,13 +82,24 @@ export const CASE_STUDIES: CaseStudy[] = [
           "Email or WhatsApp notification handoff.",
           "AI-assisted lead qualification.",
           "API integration and structured data capture.",
-          "Self-hosted n8n on a cloud VM using Nginx as a reverse proxy, DNS for n8n.omadigital.net, HTTPS access, and secure routing to the internal n8n service.",
+        ],
+      },
+      {
+        heading: "Infrastructure Proof",
+        content:
+          "Self-hosted n8n on a cloud VM using Nginx as a reverse proxy, configured DNS for n8n.omadigital.net, enabled HTTPS access, and routed external traffic securely to the internal n8n service.",
+        list: [
+          "Self-hosted n8n on a cloud VM.",
+          "Nginx configured as a reverse proxy.",
+          "DNS configured for n8n.omadigital.net.",
+          "HTTPS access enabled for secure browser traffic.",
+          "External traffic routed securely to the internal n8n service.",
         ],
       },
       {
         heading: "Value",
         content:
-          "This shows the transition from support technician to automation-aware technical operator with business process understanding.",
+          "This shows practical range beyond basic support: customer workflow thinking, deployment discipline, DNS/HTTPS awareness, and the ability to document technical systems clearly.",
       },
     ],
   },

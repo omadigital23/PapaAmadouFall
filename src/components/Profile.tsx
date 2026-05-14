@@ -5,7 +5,7 @@ export default function Profile() {
   return (
     <section
       id="profile"
-      className="grid grid-cols-[minmax(0,0.82fr)_minmax(420px,1fr)] items-start gap-[clamp(34px,6vw,84px)] bg-white px-[clamp(18px,4vw,56px)] py-[clamp(62px,8vw,104px)] scroll-mt-[96px] max-[1080px]:grid-cols-1"
+      className="grid scroll-mt-[150px] grid-cols-[minmax(0,0.82fr)_minmax(420px,1fr)] items-start gap-[clamp(34px,6vw,84px)] bg-white px-[clamp(18px,4vw,56px)] py-[clamp(62px,8vw,104px)] max-[1080px]:grid-cols-1 min-[900px]:scroll-mt-[96px]"
       aria-labelledby="profile-title"
     >
       <ScrollReveal>

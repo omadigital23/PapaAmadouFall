@@ -5,7 +5,7 @@ export default function Contact() {
   return (
     <section
       id="contact"
-      className="flex items-center justify-between gap-8 bg-deep-3 px-[clamp(18px,4vw,56px)] py-[clamp(58px,7vw,92px)] text-white scroll-mt-[96px] max-[820px]:flex-col max-[820px]:items-start"
+      className="flex scroll-mt-[150px] items-center justify-between gap-8 bg-deep-3 px-[clamp(18px,4vw,56px)] py-[clamp(58px,7vw,92px)] text-white max-[820px]:flex-col max-[820px]:items-start min-[900px]:scroll-mt-[96px]"
       aria-labelledby="contact-title"
     >
       <ScrollReveal>

@@ -3,6 +3,7 @@ import Hero from "@/components/Hero";
 import SignalStrip from "@/components/SignalStrip";
 import Profile from "@/components/Profile";
 import Projects from "@/components/Projects";
+import Evidence from "@/components/Evidence";
 import Experience from "@/components/Experience";
 import Certifications from "@/components/Certifications";
 import TargetRoles from "@/components/TargetRoles";
@@ -18,6 +19,7 @@ export default function Home() {
         <SignalStrip />
         <Profile />
         <Projects />
+        <Evidence />
         <Experience />
         <Certifications />
         <TargetRoles />

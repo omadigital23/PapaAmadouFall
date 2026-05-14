@@ -4,8 +4,8 @@ import ScrollReveal from "./ScrollReveal";
 export default function Certifications() {
   return (
     <section
-      id="proof"
-      className="bg-soft px-[clamp(18px,4vw,56px)] py-[clamp(62px,8vw,104px)] scroll-mt-[96px]"
+      id="references"
+      className="scroll-mt-[150px] bg-soft px-[clamp(18px,4vw,56px)] py-[clamp(62px,8vw,104px)] min-[900px]:scroll-mt-[96px]"
       aria-labelledby="proof-title"
     >
       <ScrollReveal>

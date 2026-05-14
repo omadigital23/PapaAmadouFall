@@ -72,7 +72,7 @@ export default async function CaseStudyPage({ params }: PageProps) {
         <p className="max-w-[780px] text-lg leading-relaxed text-white/78">{caseStudy.intro}</p>
       </section>
 
-      <section className="mx-auto grid max-w-[1120px] grid-cols-3 gap-4 px-[clamp(18px,4vw,56px)] py-[clamp(34px,6vw,72px)] max-[900px]:grid-cols-1">
+      <section className="mx-auto grid max-w-[1120px] grid-cols-[repeat(auto-fit,minmax(240px,1fr))] gap-4 px-[clamp(18px,4vw,56px)] py-[clamp(34px,6vw,72px)]">
         {caseStudy.sections.map((section) => (
           <article
             key={section.heading}

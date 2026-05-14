@@ -12,7 +12,16 @@ Show how practical automation can help small businesses capture leads, qualify p
 - Email notification workflow
 - AI-assisted lead qualification
 - Website form to database workflow
-- Self-hosted n8n on a cloud VM using Nginx as a reverse proxy, DNS for n8n.omadigital.net, HTTPS access, and secure routing to the internal n8n service
+
+## Infrastructure Proof
+
+Self-hosted n8n on a cloud VM using Nginx as a reverse proxy, configured DNS for n8n.omadigital.net, enabled HTTPS access, and routed external traffic securely to the internal n8n service.
+
+- Self-hosted n8n on a cloud VM
+- Nginx configured as a reverse proxy
+- DNS configured for n8n.omadigital.net
+- HTTPS access enabled for secure browser traffic
+- External traffic routed securely to the internal n8n service
 
 ## Skills Demonstrated
 

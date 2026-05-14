@@ -15,16 +15,31 @@ export default function ScrollReveal({ children, className = "", delay = 0 }: Sc
     const el = ref.current;
     if (!el) return;
 
+    const reveal = () => {
+      window.setTimeout(() => el.classList.add("visible"), delay);
+    };
+
+    if (window.location.hash) {
+      el.classList.add("visible");
+      return;
+    }
+
     const prefersReduced = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
     if (prefersReduced) {
       el.classList.add("visible");
       return;
     }
 
+    const rect = el.getBoundingClientRect();
+    if (rect.top < window.innerHeight && rect.bottom > 0) {
+      reveal();
+      return;
+    }
+
     const observer = new IntersectionObserver(
       ([entry]) => {
         if (entry.isIntersecting) {
-          setTimeout(() => el.classList.add("visible"), delay);
+          reveal();
           observer.unobserve(el);
         }
       },

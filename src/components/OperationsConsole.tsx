@@ -1,22 +1,10 @@
-"use client";
-
-import { useEffect, useState } from "react";
 import { CONSOLE_RESPONSES, CONSOLE_STEPS, CONSOLE_TICKETS } from "@/lib/constants";
 
 export default function OperationsConsole() {
-  const [visible, setVisible] = useState(false);
-
-  useEffect(() => {
-    const timer = setTimeout(() => setVisible(true), 400);
-    return () => clearTimeout(timer);
-  }, []);
-
   return (
     <div
-      className={`relative w-full max-w-[520px] transition-all duration-700 max-[560px]:max-w-full ${
-        visible ? "translate-x-0 opacity-100" : "translate-x-10 opacity-0"
-      }`}
-      style={{ animation: visible ? "float 6s ease-in-out infinite" : "none" }}
+      className="relative w-full max-w-[520px] translate-x-0 opacity-100 transition-all duration-700 max-[560px]:max-w-full"
+      style={{ animation: "float 6s ease-in-out infinite" }}
       aria-hidden="true"
     >
       <div className="overflow-hidden rounded-xl border border-white/10 bg-deep-2/90 shadow-[0_32px_80px_rgba(0,0,0,0.5)] backdrop-blur-sm">
@@ -41,15 +29,10 @@ export default function OperationsConsole() {
           <div className="border-r border-white/8 p-4 max-[560px]:border-b max-[560px]:border-r-0">
             <h3 className="mb-3 text-sm font-[800] tracking-wide text-white/90">Ticket Triage</h3>
             <div className="flex flex-col gap-2">
-              {CONSOLE_TICKETS.map((ticket, index) => (
+              {CONSOLE_TICKETS.map((ticket) => (
                 <div
                   key={ticket.label}
                   className="flex items-start gap-2.5 rounded-lg border border-white/[0.06] bg-white/[0.06] px-3 py-2.5 transition-all duration-300 hover:bg-white/[0.1]"
-                  style={{
-                    animation: visible
-                      ? `staggerIn 0.4s ease-out ${300 + index * 150}ms both`
-                      : "none",
-                  }}
                 >
                   <span
                     className="mt-1 h-2.5 w-2.5 shrink-0 rounded-full"
@@ -78,11 +61,6 @@ export default function OperationsConsole() {
                     <div
                       key={step}
                       className="flex items-center gap-2.5 rounded-md bg-white/[0.04] px-3 py-1.5"
-                      style={{
-                        animation: visible
-                          ? `staggerIn 0.4s ease-out ${600 + index * 200}ms both`
-                          : "none",
-                      }}
                     >
                       <span
                         className="flex h-5 w-5 shrink-0 items-center justify-center rounded text-[10px] font-[800] text-white"
@@ -99,9 +77,6 @@ export default function OperationsConsole() {
 
             <div
               className="border-t border-white/8 p-4"
-              style={{
-                animation: visible ? "staggerIn 0.5s ease-out 1600ms both" : "none",
-              }}
             >
               <h3 className="mb-2.5 rounded-lg bg-white px-3 py-2 text-sm font-[800] text-ink shadow-sm">
                 Customer Response
