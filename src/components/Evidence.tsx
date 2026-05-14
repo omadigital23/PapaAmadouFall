@@ -66,7 +66,7 @@ export default function Evidence() {
               </div>
 
               <div
-                className="grid grid-cols-[repeat(auto-fit,minmax(190px,1fr))] gap-3 p-5"
+                className="grid grid-cols-1 gap-3 p-5 min-[720px]:grid-cols-2"
                 aria-label="n8n deployment flow"
               >
                 {INFRASTRUCTURE_STEPS.map((step, index) => (
@@ -74,9 +74,9 @@ export default function Evidence() {
                     key={step.label}
                     className="relative min-h-[164px] min-w-0 rounded-lg border border-white/10 bg-white/[0.06] p-4"
                   >
-                    {index < INFRASTRUCTURE_STEPS.length - 1 && (
+                    {index % 2 === 0 && (
                       <span
-                        className="absolute right-[-14px] top-1/2 hidden h-px w-[14px] bg-accent-light/60 min-[1180px]:block"
+                        className="absolute right-[-14px] top-1/2 hidden h-px w-[14px] bg-accent-light/60 min-[720px]:block"
                         aria-hidden="true"
                       />
                     )}
