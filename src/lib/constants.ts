@@ -182,7 +182,7 @@ export const PROJECTS: Project[] = [
     tag: "Automation",
     title: "OMA Digital Automation",
     description:
-      "Lead capture, CRM handoff, API workflow, notification, and automation concepts for small-business operations.",
+      "Lead capture, CRM handoff, API workflows, notifications, and self-hosted n8n infrastructure with Nginx, DNS, HTTPS, and secure routing.",
     href: "/PapaAmadouFall/case-studies/oma-digital-automation-portfolio",
     style: "normal",
   },

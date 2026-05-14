@@ -67,7 +67,7 @@ export const CASE_STUDIES: CaseStudy[] = [
     tag: "Automation",
     title: "OMA Digital Automation",
     intro:
-      "Practical automation concepts for lead capture, CRM handoff, API workflows, notifications, and small-business response systems.",
+      "Practical automation concepts and self-hosted n8n infrastructure for lead capture, CRM handoff, API workflows, notifications, and small-business response systems.",
     sections: [
       {
         heading: "Purpose",
@@ -82,6 +82,7 @@ export const CASE_STUDIES: CaseStudy[] = [
           "Email or WhatsApp notification handoff.",
           "AI-assisted lead qualification.",
           "API integration and structured data capture.",
+          "Self-hosted n8n on a cloud VM using Nginx as a reverse proxy, DNS for n8n.omadigital.net, HTTPS access, and secure routing to the internal n8n service.",
         ],
       },
       {
