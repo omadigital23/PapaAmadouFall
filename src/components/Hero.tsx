@@ -1,4 +1,4 @@
-import { HERO, SITE } from "@/lib/constants";
+import { HERO, HERO_FACTS, SITE } from "@/lib/constants";
 import OperationsConsole from "./OperationsConsole";
 
 export default function Hero() {
@@ -42,6 +42,22 @@ export default function Hero() {
           <p className="mt-4 max-w-[590px] text-[17px] leading-relaxed text-white/78 max-[900px]:text-base">
             {HERO.text}
           </p>
+
+          <dl className="mt-6 grid max-w-[620px] grid-cols-2 gap-2.5 max-[560px]:grid-cols-1">
+            {HERO_FACTS.map((fact) => (
+              <div
+                key={fact.label}
+                className="rounded-lg border border-white/12 bg-white/[0.055] px-4 py-3 shadow-[0_10px_30px_rgba(0,0,0,0.12)]"
+              >
+                <dt className="text-[11px] font-[900] uppercase tracking-[0.12em] text-accent-light">
+                  {fact.label}
+                </dt>
+                <dd className="m-0 mt-1 text-[14px] font-[800] leading-snug text-white">
+                  {fact.value}
+                </dd>
+              </div>
+            ))}
+          </dl>
 
           <div className="mt-6 flex flex-wrap gap-3" aria-label="Primary links">
             <a

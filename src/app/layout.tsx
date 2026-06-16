@@ -21,6 +21,8 @@ export const metadata: Metadata = {
     "Help Desk",
     "SaaS Support",
     "French English Support",
+    "TCF Canada French",
+    "Francophone Technical Support",
     "React Next.js Web Support",
   ],
   authors: [{ name: SITE.name, url: SITE.url }],
@@ -58,7 +60,10 @@ const jsonLd = {
   url: SITE.url,
   email: SITE.email,
   jobTitle: "Bilingual Technical Support Specialist",
-  knowsLanguage: ["en", "fr"],
+  knowsLanguage: [
+    { "@type": "Language", name: "French", alternateName: "fr" },
+    { "@type": "Language", name: "English", alternateName: "en" },
+  ],
   sameAs: [SITE.github, SITE.linkedin],
   address: {
     "@type": "PostalAddress",

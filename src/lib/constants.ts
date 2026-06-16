@@ -69,6 +69,36 @@ export interface Certification {
   available: boolean;
 }
 
+export interface LanguageResult {
+  skill: string;
+  level: string;
+  score?: string;
+  detail: string;
+  strength: number;
+}
+
+export interface LanguageCard {
+  language: string;
+  flag: string;
+  globalLevel: string;
+  headline: string;
+  source: string;
+  description: string;
+  results: LanguageResult[];
+}
+
+export interface EducationItem {
+  period: string;
+  degree: string;
+  institution: string;
+  system: string;
+  mention: string;
+  description: string;
+  tag: string;
+  tagStyle: string;
+  note?: string;
+}
+
 export interface CaseStudy {
   slug: string;
   tag: string;
@@ -81,7 +111,7 @@ export const SITE = {
   name: "Papa Amadou Fall",
   title: "Papa Amadou Fall | Bilingual Technical Support Specialist",
   description:
-    "Bilingual French-English technical support specialist focused on IT support, telecom troubleshooting, SaaS support, web support, and practical n8n automation infrastructure.",
+    "Bilingual French-English technical support specialist in British Columbia focused on IT support, telecom troubleshooting, SaaS support, web support, and practical n8n automation infrastructure.",
   url: "https://omadigital23.github.io/PapaAmadouFall/",
   basePath: "/PapaAmadouFall",
   github: "https://github.com/omadigital23",
@@ -99,20 +129,29 @@ export const AVAILABILITY = {
 
 export const NAV_LINKS = [
   { label: "Profile", href: "#profile" },
+  { label: "Languages", href: "#languages" },
   { label: "Projects", href: "#projects" },
   { label: "Proof", href: "#proof" },
   { label: "Experience", href: "#experience" },
+  { label: "Education", href: "#education" },
   { label: "Contact", href: "#contact" },
 ] as const;
 
 export const HERO = {
-  eyebrow: "Bilingual French-English | Technical Support | Web Support",
+  eyebrow: "Campbell River, BC | Trilingual FR/EN/WO | Technical Support",
   firstName: "Papa Amadou",
   lastName: "Fall",
-  kicker: "Technical Support Specialist with verified web, DNS, HTTPS, and automation depth.",
+  kicker: "Bilingual Technical Support Specialist with verified French results and real web infrastructure depth.",
   text:
-    "I help support teams diagnose issues clearly, document cleanly, communicate in French and English, and bring practical infrastructure knowledge across SaaS, DNS, reverse proxy, HTTPS, and n8n automation environments.",
+    "I help support teams diagnose issues clearly, document cleanly, communicate in French and English, and bring practical technical range across telecom, SaaS, DNS, HTTPS, reverse proxy, and n8n automation environments.",
 } as const;
+
+export const HERO_FACTS = [
+  { label: "Target", value: "IT Support / Help Desk" },
+  { label: "Experience", value: "10+ years bilingual" },
+  { label: "French proof", value: "TCF Canada C1" },
+  { label: "Education", value: "Licence Informatique" },
+] as const;
 
 export const SIGNALS: SignalItem[] = [
   {
@@ -122,13 +161,13 @@ export const SIGNALS: SignalItem[] = [
   },
   {
     number: "02",
-    title: "FR / EN",
-    description: "Professional bilingual communication for users, teams, and written follow-up.",
+    title: "TCF Canada",
+    description: "French results: C1 listening, C1 reading, C1 writing, and B2 speaking.",
   },
   {
     number: "03",
-    title: "Web + IT",
-    description: "React, Next.js, PHP, MySQL, APIs, DNS basics, devices, and user environments.",
+    title: "10+ years",
+    description: "Bilingual FR/EN work experience across telecom support, logistics, and web development.",
   },
   {
     number: "04",
@@ -139,9 +178,9 @@ export const SIGNALS: SignalItem[] = [
 
 export const PROFILE = {
   eyebrow: "Professional Profile",
-  heading: "A calm support operator for real customer environments.",
+  heading: "A calm support operator for real user environments.",
   text:
-    "My strongest fit is a bilingual technical support role where clear troubleshooting, precise notes, customer reassurance, and escalation judgment matter. My web background adds technical range without diluting the support profile.",
+    "My strongest fit is a bilingual technical support role where clear troubleshooting, precise notes, customer reassurance, and escalation judgment matter. My web background adds technical range, while my telecom support experience keeps the profile focused on users, tickets, and practical resolution.",
 } as const;
 
 export const CAPABILITIES: Capability[] = [
@@ -292,9 +331,122 @@ export const EVIDENCE_METRICS: EvidenceMetric[] = [
     detail: "Cloud VM, Nginx reverse proxy, DNS, HTTPS, and secure routing to the service.",
   },
   {
-    value: "FR/EN",
-    label: "Bilingual",
-    detail: "Clear written and spoken support communication for users and teams.",
+    value: "C1/B2",
+    label: "French proof",
+    detail: "TCF Canada results available privately for verified hiring and immigration processes.",
+  },
+];
+
+export const LANGUAGE_HEADER = {
+  eyebrow: "Languages",
+  heading: "Trilingual profile — verified French, professional English, native Wolof.",
+  text:
+    "Language precision matters in support: users need calm explanations, accurate notes, and clear follow-up at every step. French is certified through TCF Canada (C1/B2). English is used daily for technical support, web work, and team communication. Wolof is my mother tongue.",
+} as const;
+
+export const LANGUAGE_CARDS: LanguageCard[] = [
+  {
+    language: "French",
+    flag: "🇫🇷",
+    globalLevel: "C1",
+    headline: "Verified TCF Canada results",
+    source: "TCF Canada — February 2026 | Valid until February 2028",
+    description:
+      "Certified professional French for customer support, documentation, guided troubleshooting, and written follow-up. TCF Canada is the official French proficiency test recognized by IRCC for Canadian immigration and recruitment.",
+    results: [
+      {
+        skill: "Listening",
+        level: "C1",
+        score: "505 pts",
+        detail: "Understand complex customer issues, technical context, and multi-step instructions.",
+        strength: 94,
+      },
+      {
+        skill: "Reading",
+        level: "C1",
+        score: "502 pts",
+        detail: "Read procedures, tickets, internal notes, support documentation, and technical specs.",
+        strength: 94,
+      },
+      {
+        skill: "Writing",
+        level: "C1",
+        score: "15 / 20",
+        detail: "Write structured follow-ups, customer notes, internal summaries, and escalation reports.",
+        strength: 90,
+      },
+      {
+        skill: "Speaking",
+        level: "B2",
+        score: "13 / 20",
+        detail: "Guide users clearly through live troubleshooting steps and explain technical issues.",
+        strength: 82,
+      },
+    ],
+  },
+  {
+    language: "English",
+    flag: "🇬🇧",
+    globalLevel: "C1",
+    headline: "C1 proficiency — 10 years bilingual work experience",
+    source: "10 years bilingual at XCEED/Videotron & ELIM Peche | Daily professional use",
+    description:
+      "Professional English validated by over 10 years of daily bilingual work: technical support at XCEED/Videotron serving English-speaking customers, logistics coordination at ELIM Peche, web development, and recruiter correspondence. C1 level across all professional contexts.",
+    results: [
+      {
+        skill: "Support communication",
+        level: "C1 — Professional",
+        detail: "Explain diagnostic checks, next steps, and escalation status clearly to English-speaking users and team leads.",
+        strength: 88,
+      },
+      {
+        skill: "Technical reading",
+        level: "C1 — Professional",
+        detail: "Work confidently with technical docs, SaaS tools, APIs, tickets, and deployment material.",
+        strength: 90,
+      },
+      {
+        skill: "Written follow-up",
+        level: "C1 — Professional",
+        detail: "Write clear status updates, issue summaries, customer notes, and async team messages.",
+        strength: 86,
+      },
+      {
+        skill: "Spoken interaction",
+        level: "C1 — Professional",
+        detail: "Handle customer calls, team syncs, interviews, and live interactions confidently in English.",
+        strength: 84,
+      },
+    ],
+  },
+  {
+    language: "Wolof",
+    flag: "🇸🇳",
+    globalLevel: "Native",
+    headline: "Native language — mother tongue",
+    source: "First language — spoken natively since childhood in Senegal",
+    description:
+      "Wolof is my first language, spoken natively since childhood in Thiès, Senegal. It is the most widely spoken language in Senegal and serves as a regional lingua franca across West Africa.",
+    results: [
+      {
+        skill: "Oral communication",
+        level: "Native — C2",
+        detail: "Full native fluency for any spoken context: informal, professional, and community.",
+        strength: 100,
+      },
+      {
+        skill: "Comprehension",
+        level: "Native — C2",
+        detail: "Complete natural understanding of all registers, accents, and cultural contexts.",
+        strength: 100,
+      },
+      {
+        skill: "Cultural literacy",
+        level: "Native",
+        detail: "Full cultural and contextual fluency across Senegambian speech communities.",
+        strength: 100,
+      },
+    ],
   },
 ];
 
@@ -496,11 +648,31 @@ export const TARGET_ROLES = [
   "Junior Web Support Specialist",
 ] as const;
 
+export const EDUCATION_HEADER = {
+  eyebrow: "Education",
+  heading: "Academic foundation in information systems and business management.",
+} as const;
+
+export const EDUCATION: EducationItem[] = [
+  {
+    period: "2011 — 2014",
+    degree: "Licence en Management Informatisé des Organisations",
+    institution: "Université Iba Der Thiam de Thiès",
+    system: "LMD System — 180 ECTS Credits",
+    mention: "Assez-Bien",
+    description:
+      "Three-year degree combining business management, information systems, database administration, and organizational computing. Provides the analytical and technical foundation for IT support, SaaS environments, and structured problem-solving.",
+    tag: "University Degree",
+    tagStyle: "cert-tag-employment",
+    note: "WES/ECA credential evaluation in progress for Canadian equivalency.",
+  },
+];
+
 export const CONTACT = {
   eyebrow: "Contact",
   heading: "Available for bilingual technical support and IT support conversations.",
   text:
-    "Best fit: support teams that need calm troubleshooting, clear notes, bilingual customer handling, and technical curiosity.",
+    "Best fit: support teams that need calm troubleshooting, clear notes, bilingual customer handling, and technical curiosity backed by real web and automation delivery.",
 } as const;
 
 export const CONSOLE_TICKETS = [
