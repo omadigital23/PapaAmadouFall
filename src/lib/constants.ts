@@ -548,7 +548,7 @@ export const EXPERIENCE_HEADER = {
 
 export const EXPERIENCE: ExperienceItem[] = [
   {
-    period: "2026 - Present",
+    period: "June 2026 - Present",
     role: "Food Counter Attendant / Customer Service",
     description:
       "Delivered front-line customer service in a high-volume Canadian environment, operating POS systems, resolving client inquiries, and building workplace communication skills transferable to IT support.",
