@@ -549,9 +549,9 @@ export const EXPERIENCE_HEADER = {
 export const EXPERIENCE: ExperienceItem[] = [
   {
     period: "2026 - Present",
-    role: "Tim Hortons - Customer Service Team Member",
+    role: "Food Counter Attendant / Customer Service",
     description:
-      "Canadian workplace experience, POS operations, customer service, team coordination, punctuality, and shift discipline.",
+      "Delivered front-line customer service in a high-volume Canadian environment, operating POS systems, resolving client inquiries, and building workplace communication skills transferable to IT support.",
     tags: [
       { label: "Canadian workplace", style: "exp-tag-telecom" },
       { label: "Customer service", style: "exp-tag-csat" },
@@ -559,9 +559,9 @@ export const EXPERIENCE: ExperienceItem[] = [
   },
   {
     period: "2020 - 2026",
-    role: "XCM Sourcing - Videotron Technical Support Advisor N1",
+    role: "Bilingual Technical Support Advisor N1 / Agent",
     description:
-      "First-line support for internet, modem, router, Wi-Fi, telephony, tickets, escalations, and bilingual customer communication.",
+      "First-contact support for internet connectivity, modem/router configuration, Wi-Fi, and DNS diagnostics. Guided users through troubleshooting, documented tickets, and maintained KPI targets.",
     tags: [
       { label: "Bilingual N1", style: "exp-tag-bilingual" },
       { label: "Telecom", style: "exp-tag-telecom" },
@@ -570,20 +570,20 @@ export const EXPERIENCE: ExperienceItem[] = [
   },
   {
     period: "2016 - 2020",
-    role: "Elim Peche Ltd - Logistics & Operations Coordinator",
+    role: "Stock Manager & Assistant Manager",
     description:
-      "Stock reporting, inventory reconciliation, supply chain coordination, purchase order tracking, operations support, and internal documentation.",
+      "Managed inventory tracking, production reporting, stock organization, and team coordination. Maintained reporting and documentation discipline transferable to support ticketing.",
     tags: [
-      { label: "Logistics", style: "exp-tag-logistics" },
-      { label: "Stock reports", style: "exp-tag-stock" },
+      { label: "Stock reporting", style: "exp-tag-stock" },
+      { label: "Operations", style: "exp-tag-logistics" },
       { label: "Documentation", style: "exp-tag-docs" },
     ],
   },
   {
     period: "2015 - 2016",
-    role: "Net-Transact - Web Developer & Maintenance Technician",
+    role: "Web Developer & Maintenance Technician",
     description:
-      "Web application maintenance, PHP, JavaScript, MySQL, updates, troubleshooting, and internal user support.",
+      "Developed and maintained web applications and internal tools using PHP, JavaScript, and MySQL. Performed database updates, troubleshooting, and user support.",
     tags: [
       { label: "Web support", style: "exp-tag-web" },
       { label: "PHP / MySQL", style: "exp-tag-web" },
