@@ -9,6 +9,7 @@ import Experience from "@/components/Experience";
 import Education from "@/components/Education";
 import Certifications from "@/components/Certifications";
 import TargetRoles from "@/components/TargetRoles";
+import CoverLetter from "@/components/CoverLetter";
 import Contact from "@/components/Contact";
 import Footer from "@/components/Footer";
 
@@ -27,6 +28,7 @@ export default function Home() {
         <Education />
         <Certifications />
         <TargetRoles />
+        <CoverLetter />
         <Contact />
       </main>
       <Footer />

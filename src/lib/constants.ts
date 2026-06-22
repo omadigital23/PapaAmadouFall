@@ -109,20 +109,20 @@ export interface CaseStudy {
 
 export const SITE = {
   name: "Papa Amadou Fall",
-  title: "Papa Amadou Fall | Bilingual Technical Support Specialist",
+  title: "Papa Amadou Fall | Client Support Analyst & Bilingual IT Support",
   description:
-    "Bilingual French-English technical support specialist in British Columbia focused on IT support, telecom troubleshooting, SaaS support, web support, and practical n8n automation infrastructure.",
+    "Client Support Analyst and bilingual French-English IT support profile in British Columbia focused on helpdesk support, Windows and Microsoft 365 user environments, telecom troubleshooting, SaaS support, web support, and practical n8n automation infrastructure.",
   url: "https://omadigital23.github.io/PapaAmadouFall/",
   basePath: "/PapaAmadouFall",
   github: "https://github.com/omadigital23",
-  linkedin: "https://www.linkedin.com/in/papa-amadou-bb95a01a1",
-  email: "omadigital23@gmail.com",
+  linkedin: "https://www.linkedin.com/in/papa-amadou-fall-bb95a01a1",
+  email: "fallpape199@gmail.com",
   cv: "/PapaAmadouFall/assets/Papa_Amadou_Fall_CV.pdf",
   profileLogo: "/PapaAmadouFall/assets/papa-amadou-fall-profile-logo.svg",
 } as const;
 
 export const AVAILABILITY = {
-  status: "Open to work",
+  status: "Open to Work · LMIA-Exempt",
   location: "British Columbia, Canada",
   timezone: "Pacific Time",
 } as const;
@@ -134,30 +134,31 @@ export const NAV_LINKS = [
   { label: "Proof", href: "#proof" },
   { label: "Experience", href: "#experience" },
   { label: "Education", href: "#education" },
+  { label: "Cover Letter", href: "#cover-letter" },
   { label: "Contact", href: "#contact" },
 ] as const;
 
 export const HERO = {
-  eyebrow: "Campbell River, BC | Trilingual FR/EN/WO | Technical Support",
+  eyebrow: "Campbell River, BC | Bilingual Support Specialist | Mobilité Francophone (LMIA-Exempt)",
   firstName: "Papa Amadou",
   lastName: "Fall",
-  kicker: "Bilingual Technical Support Specialist with verified French results and real web infrastructure depth.",
+  kicker: "Bilingual Technical Support Representative with 5+ years of user-facing technical support — available to work immediately in BC.",
   text:
-    "I help support teams diagnose issues clearly, document cleanly, communicate in French and English, and bring practical technical range across telecom, SaaS, DNS, HTTPS, reverse proxy, and n8n automation environments.",
+    "I help support teams troubleshoot internet, Wi-Fi, modem/router, telephony and account issues clearly, document tickets with precision, communicate in French and English, and deliver consistent customer satisfaction. Currently based in Campbell River, BC with valid work authorization under the Mobilité Francophone program — no LMIA required.",
 } as const;
 
 export const HERO_FACTS = [
-  { label: "Target", value: "IT Support / Help Desk" },
-  { label: "Experience", value: "10+ years bilingual" },
-  { label: "French proof", value: "TCF Canada C1" },
-  { label: "Education", value: "Licence Informatique" },
+  { label: "Target Role", value: "Technical Support / Help Desk" },
+  { label: "Experience", value: "5+ years IT support" },
+  { label: "Languages", value: "French / English / Wolof" },
+  { label: "Work Permit", value: "Mobilité Francophone · LMIA-Exempt" },
 ] as const;
 
 export const SIGNALS: SignalItem[] = [
   {
     number: "01",
-    title: "Support-first",
-    description: "N1 telecom support, customer handling, documentation, and escalation discipline.",
+    title: "Client support",
+    description: "Level 1 support, Level 2 escalation judgment, helpdesk notes, and user follow-up.",
   },
   {
     number: "02",
@@ -166,8 +167,8 @@ export const SIGNALS: SignalItem[] = [
   },
   {
     number: "03",
-    title: "10+ years",
-    description: "Bilingual FR/EN work experience across telecom support, logistics, and web development.",
+    title: "5+ years",
+    description: "Recent IT client support experience across telecom users, tickets, diagnostics, and escalation.",
   },
   {
     number: "04",
@@ -178,46 +179,46 @@ export const SIGNALS: SignalItem[] = [
 
 export const PROFILE = {
   eyebrow: "Professional Profile",
-  heading: "A calm support operator for real user environments.",
+  heading: "A calm support operator for structured user environments.",
   text:
-    "My strongest fit is a bilingual technical support role where clear troubleshooting, precise notes, customer reassurance, and escalation judgment matter. My web background adds technical range, while my telecom support experience keeps the profile focused on users, tickets, and practical resolution.",
+    "My strongest fit is a Client Support Analyst or bilingual IT support role where clear troubleshooting, precise ticket notes, customer reassurance, Microsoft 365 and Windows user support, and escalation judgment matter. My web background adds technical range, while my telecom support experience keeps the profile focused on users, tickets, and practical resolution.",
 } as const;
 
 export const CAPABILITIES: Capability[] = [
   {
     tag: "Support",
     tagStyle: "cap-tag-support",
-    title: "Troubleshooting",
+    title: "Frontline / Intermediate Support",
     description:
-      "Connectivity checks, modem and router guidance, Wi-Fi performance, telephony issues, service validation, and clear next steps.",
+      "Remote user support, connectivity checks, modem and router guidance, Wi-Fi performance, telephony issues, account access triage, and clear next steps.",
   },
   {
     tag: "Operations",
     tagStyle: "cap-tag-ops",
     title: "Ticket Discipline",
     description:
-      "Structured notes, escalation paths, procedure compliance, handling-time awareness, and practical customer satisfaction habits.",
+      "Helpdesk request updates, priority awareness, structured notes, escalation paths, procedure compliance, follow-up habits, and practical customer satisfaction discipline.",
   },
   {
     tag: "Systems",
     tagStyle: "cap-tag-systems",
-    title: "User Environments",
+    title: "Microsoft 365 & Devices",
     description:
-      "Windows, macOS, Android, iOS, IP basics, DNS basics, cabling, customer-premise equipment, and common SaaS workflows.",
+      "Windows, Office / Microsoft 365, Teams, OneDrive, SharePoint basics, macOS, Android, iOS, IP basics, DNS basics, cabling, phones, printers, and common SaaS workflows.",
   },
   {
     tag: "Documentation",
     tagStyle: "cap-tag-docs",
     title: "Knowledge Transfer",
     description:
-      "Customer-friendly explanations, troubleshooting checklists, internal process notes, and bilingual response templates.",
+      "Customer-friendly explanations, troubleshooting checklists, user guides, internal procedure notes, bilingual response templates, and escalation summaries.",
   },
   {
     tag: "Growth",
     tagStyle: "cap-tag-growth",
-    title: "Web & Automation",
+    title: "Cloud, Web & Automation",
     description:
-      "JavaScript, TypeScript, React, Next.js, PHP, Python, MySQL, APIs, n8n, Nginx, DNS, HTTPS, and workflow automation.",
+      "JavaScript, TypeScript, React, Next.js, PHP, Python, MySQL, APIs, n8n, Nginx, DNS, HTTPS, workflow automation, and cloud learning.",
   },
 ];
 
@@ -232,7 +233,7 @@ export const PROJECTS: Project[] = [
     tag: "Support System",
     title: "Bilingual Support Ticket Simulator",
     description:
-      "Support workflow concept for ticket triage, diagnostic steps, priority selection, escalation judgment, and professional replies in English and French.",
+      "Support workflow concept for helpdesk ticket triage, priority selection, diagnostic steps, escalation judgment, and professional replies in English and French.",
     href: "/PapaAmadouFall/case-studies/bilingual-support-ticket-simulator",
     style: "featured",
   },
@@ -240,7 +241,7 @@ export const PROJECTS: Project[] = [
     tag: "Documentation",
     title: "Technical Support Knowledge Base",
     description:
-      "Structured troubleshooting notes for connectivity, Wi-Fi, DNS, modem/router support, device checks, and escalation decisions.",
+      "Structured troubleshooting notes for Windows, Microsoft 365, connectivity, Wi-Fi, DNS, modem/router support, peripheral checks, and escalation decisions.",
     href: "/PapaAmadouFall/case-studies/technical-support-knowledge-base",
     style: "normal",
   },
@@ -309,16 +310,16 @@ export const PROJECTS: Project[] = [
 
 export const EVIDENCE_HEADER = {
   eyebrow: "Evidence Layer",
-  heading: "Proof that the support profile is backed by real technical delivery.",
+  heading: "Proof that the support profile maps to real client environments.",
   text:
-    "The portfolio now connects customer support discipline with visible delivery: live websites, automation infrastructure, DNS/HTTPS deployment, and documented case studies.",
+    "The portfolio connects helpdesk discipline with visible delivery: ticket thinking, user documentation, live websites, automation infrastructure, DNS/HTTPS deployment, and documented case studies.",
 } as const;
 
 export const EVIDENCE_METRICS: EvidenceMetric[] = [
   {
     value: "5+",
-    label: "Years support",
-    detail: "Telecom N1, ticketing, troubleshooting, escalation, and bilingual customer handling.",
+    label: "Years IT support",
+    detail: "Recent client support, ticketing, troubleshooting, escalation, and bilingual customer handling.",
   },
   {
     value: "5",
@@ -543,27 +544,29 @@ export const PROJECT_PROOFS: ProjectProof[] = [
 
 export const EXPERIENCE_HEADER = {
   eyebrow: "Experience",
-  heading: "Customer-facing support, workplace reliability, and technical range.",
+  heading: "Client-facing support, workplace reliability, and technical range.",
 } as const;
 
 export const EXPERIENCE: ExperienceItem[] = [
   {
-    period: "June 2026 - Present",
-    role: "Food Counter Attendant / Customer Service",
+    period: "Jun 2026 – Present",
+    role: "Customer Service Team Member — Tim Hortons",
     description:
-      "Delivered front-line customer service in a high-volume Canadian environment, operating POS systems, resolving client inquiries, and building workplace communication skills transferable to IT support.",
+      "Front-line customer service in a high-volume Canadian restaurant environment. Operating POS systems, resolving client inquiries, coordinating with team members, and building communication and punctuality skills directly transferable to IT help desk and service desk roles.",
     tags: [
       { label: "Canadian workplace", style: "exp-tag-telecom" },
       { label: "Customer service", style: "exp-tag-csat" },
+      { label: "Campbell River, BC", style: "exp-tag-bilingual" },
     ],
   },
   {
-    period: "2020 - 2026",
-    role: "Bilingual Technical Support Advisor N1 / Agent",
+    period: "Dec 2020 – Jun 2026",
+    role: "Bilingual Technical Support Representative — XCM Sourcing (Videotron)",
     description:
-      "First-contact support for internet connectivity, modem/router configuration, Wi-Fi, and DNS diagnostics. Guided users through troubleshooting, documented tickets, and maintained KPI targets.",
+      "Resolved internet, Wi-Fi, modem/router, telephony and mobile service issues for residential customers. Used troubleshooting procedures to identify root causes and restore services. Managed customer interactions through ticketing and CRM systems. Delivered support in both French and English while maintaining quality and customer satisfaction targets. Escalated complex technical incidents to higher support levels when required.",
     tags: [
-      { label: "Bilingual N1", style: "exp-tag-bilingual" },
+      { label: "Bilingual FR/EN", style: "exp-tag-bilingual" },
+      { label: "Helpdesk / CRM", style: "exp-tag-docs" },
       { label: "Telecom", style: "exp-tag-telecom" },
       { label: "Troubleshooting", style: "exp-tag-csat" },
     ],
@@ -603,11 +606,11 @@ export const CERTIFICATIONS_HEADER = {
 
 export const CERTIFICATIONS: Certification[] = [
   {
-    period: "2020 - 2026",
-    title: "Technical Support Advisor N1",
+    period: "Dec 2020 – Jun 2026",
+    title: "Technical Support Representative",
     issuer: "XCM Sourcing / Videotron",
     description:
-      "Bilingual first-line telecom support across internet, Wi-Fi, modem/router, telephony, tickets, and escalation workflows.",
+      "Bilingual first-line telecom support across internet, Wi-Fi, modem/router, telephony, ticketing/CRM, and escalation workflows.",
     tag: "Employment proof",
     tagStyle: "cert-tag-employment",
     available: true,
@@ -640,12 +643,13 @@ export const ROLES_HEADER = {
 } as const;
 
 export const TARGET_ROLES = [
+  "Technical Support Representative",
   "Bilingual Technical Support Specialist",
-  "IT Support Technician",
   "Help Desk Technician",
-  "Technical Support Analyst",
-  "SaaS Support Specialist",
-  "Junior Web Support Specialist",
+  "Service Desk Analyst",
+  "IT Support Technician",
+  "Customer Support Specialist",
+  "Telecommunications Support",
 ] as const;
 
 export const EDUCATION_HEADER = {
@@ -670,23 +674,41 @@ export const EDUCATION: EducationItem[] = [
 
 export const CONTACT = {
   eyebrow: "Contact",
-  heading: "Available for bilingual technical support and IT support conversations.",
+  heading: "Available now for Technical Support, Help Desk and Service Desk roles in BC.",
   text:
-    "Best fit: support teams that need calm troubleshooting, clear notes, bilingual customer handling, and technical curiosity backed by real web and automation delivery.",
+    "Bilingual French-English (verified TCF Canada C1/B2), 5+ years of telecom technical support, and currently based in Campbell River, BC. Work authorization is active under the Mobilité Francophone program — no LMIA required for my next employer.",
+} as const;
+
+export const COVER_LETTER = {
+  eyebrow: "Cover Letter",
+  heading: "Application Letter",
+  salutation: "Dear Hiring Manager,",
+  body: [
+    "I am writing to express my strong interest in the Technical Support Representative, Help Desk Analyst, or Service Desk Analyst position within your organization.",
+    "With more than five years of experience providing customer-facing technical support, I have developed strong troubleshooting, communication, and problem-solving skills. While supporting Videotron customers through XCM Sourcing from December 2020 to June 2026, I assisted users with internet connectivity, WiFi networks, modem and router configuration, telephony services, and account-related inquiries.",
+    "In this role, I diagnosed technical issues, documented cases using CRM and ticketing systems, guided non-technical users through step-by-step resolutions, and escalated complex incidents to higher support tiers when necessary. Working daily in both French and English strengthened my ability to communicate clearly with diverse customers while consistently meeting quality and customer satisfaction objectives.",
+    "In addition to my professional experience, I hold a Bachelor's Degree in Management Information Systems from Université de Thiès and continue to expand my technical knowledge through ongoing Google Cloud training. My technical foundation includes Microsoft 365, Windows environments, networking fundamentals, VPN connectivity, DNS, Active Directory basics, and remote support practices.",
+    "I am currently based in Campbell River, British Columbia, and hold valid Canadian work authorization through the Mobilité Francophone program (LMIA-exempt, exemption code C16). This allows your organization to hire me immediately without the delays, costs, or administrative requirements associated with an LMIA process.",
+    "I am confident that my bilingual communication skills, customer service experience, technical support background, and immediate work eligibility would allow me to make a positive contribution to your team from day one.",
+    "Thank you for your time and consideration. I would welcome the opportunity to discuss how my skills and experience can contribute to your organization’s success."
+  ],
+  closing: "Sincerely,",
+  name: "Papa Amadou FALL",
+  contact: "fallpape199@gmail.com · www.linkedin.com/in/papa-amadou-fall-bb95a01a1",
 } as const;
 
 export const CONSOLE_TICKETS = [
   { label: "Internet down", sub: "Connectivity", color: "#0d7c66" },
-  { label: "Slow Wi-Fi", sub: "Performance", color: "#c9822e" },
-  { label: "Router config", sub: "Equipment", color: "#2b7de9" },
+  { label: "M365 access", sub: "User account", color: "#c9822e" },
+  { label: "Printer issue", sub: "Peripheral", color: "#2b7de9" },
   { label: "Phone issue", sub: "Telephony", color: "#7c3aed" },
-  { label: "DNS check", sub: "Network basics", color: "#c9a82e" },
+  { label: "Windows login", sub: "Workstation", color: "#c9a82e" },
 ] as const;
 
 export const CONSOLE_STEPS = [
   "Confirm symptoms",
-  "Check service status",
-  "Validate modem/router",
+  "Check account/device",
+  "Validate network path",
   "Document clear notes",
   "Escalate when needed",
 ] as const;

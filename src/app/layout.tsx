@@ -16,9 +16,13 @@ export const metadata: Metadata = {
   metadataBase: new URL(SITE.url),
   keywords: [
     "Papa Amadou Fall",
+    "Client Support Analyst",
     "Bilingual Technical Support Specialist",
     "IT Support",
     "Help Desk",
+    "Microsoft 365 Support",
+    "Windows Support",
+    "Level 1 Level 2 Support",
     "SaaS Support",
     "French English Support",
     "TCF Canada French",
@@ -59,7 +63,7 @@ const jsonLd = {
   name: "Papa Amadou Fall",
   url: SITE.url,
   email: SITE.email,
-  jobTitle: "Bilingual Technical Support Specialist",
+  jobTitle: "Client Support Analyst",
   knowsLanguage: [
     { "@type": "Language", name: "French", alternateName: "fr" },
     { "@type": "Language", name: "English", alternateName: "en" },

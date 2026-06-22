@@ -2,16 +2,16 @@
 
 ## Purpose
 
-Create a small web application that simulates technical support tickets and generates structured responses in English and French.
+Create a small web application that simulates client support tickets and generates structured helpdesk responses in English and French.
 
 ## Example Features
 
-- Ticket categories: internet, Wi-Fi, modem, router, telephony, billing handoff, account access
-- Priority levels: low, normal, urgent
-- Suggested troubleshooting checklist
+- Ticket categories: Windows sign-in, Microsoft 365 access, Teams/OneDrive, printers, phones, internet, Wi-Fi, modem, router, telephony, billing handoff, account access
+- Priority levels: low, normal, urgent, escalation required
+- Suggested troubleshooting checklist tied to user impact, device context, and network path
 - Suggested customer reply in English
 - Suggested customer reply in French
-- Escalation recommendation
+- Escalation recommendation for Level 2 support or vendor follow-up
 
 ## Recommended Stack
 
@@ -23,11 +23,12 @@ Create a small web application that simulates technical support tickets and gene
 
 - Technical support workflow thinking
 - Bilingual communication
+- Helpdesk ticket documentation
+- Priority selection and escalation judgment
 - Frontend development
 - Data structure design
 - Customer empathy and clarity
 
 ## Portfolio Value
 
-This is one of the strongest projects for a bilingual technical support profile because it connects support experience, communication, and software skills.
-
+This is one of the strongest projects for a Client Support Analyst profile because it connects support experience, ticket discipline, communication, and software skills.

@@ -6,28 +6,28 @@ export const CASE_STUDIES: CaseStudy[] = [
     tag: "Support System",
     title: "Bilingual Support Ticket Simulator",
     intro:
-      "A support workflow concept for classifying tickets, selecting diagnostic steps, and drafting professional replies in English and French.",
+      "A helpdesk workflow concept for classifying client support tickets, selecting diagnostic steps, setting priority, and drafting professional replies in English and French.",
     sections: [
       {
         heading: "Purpose",
         content:
-          "Show the habits behind strong first-line support: understand the symptom, choose the right checks, communicate clearly, and know when to escalate.",
+          "Show the habits behind strong Level 1 and intermediate client support: understand the symptom, choose the right checks, communicate clearly, update the ticket, and know when to escalate.",
       },
       {
         heading: "Workflow",
         content: "",
         list: [
-          "Ticket categories: internet, Wi-Fi, modem, router, telephony, and account access.",
+          "Ticket categories: Windows sign-in, Microsoft 365 access, Teams/OneDrive, printers, phones, internet, Wi-Fi, modem, router, telephony, and account access.",
           "Priority levels: low, normal, urgent, and escalation required.",
-          "Troubleshooting checklist tied to symptoms and device context.",
+          "Troubleshooting checklist tied to symptoms, user impact, device context, and network path.",
           "Customer response templates in English and French.",
-          "Escalation recommendation when level 2 support is needed.",
+          "Escalation recommendation when Level 2 support or vendor follow-up is needed.",
         ],
       },
       {
         heading: "Value",
         content:
-          "The project demonstrates structured support thinking, bilingual communication, and the ability to turn repeated issues into repeatable workflows.",
+          "The project demonstrates structured helpdesk thinking, bilingual communication, priority awareness, and the ability to turn repeated issues into repeatable workflows.",
       },
     ],
   },
@@ -36,12 +36,12 @@ export const CASE_STUDIES: CaseStudy[] = [
     tag: "Documentation",
     title: "Technical Support Knowledge Base",
     intro:
-      "Troubleshooting documentation for connectivity, Wi-Fi, DNS, modem/router support, device checks, and escalation decisions.",
+      "Troubleshooting documentation for Windows, Microsoft 365, connectivity, Wi-Fi, DNS, modem/router support, peripheral checks, and escalation decisions.",
     sections: [
       {
         heading: "Purpose",
         content:
-          "Give support teams a consistent reference for resolving common issues and explaining next steps to non-technical users.",
+          "Give support teams a consistent reference for resolving common user issues, documenting next steps, and explaining fixes to non-technical staff.",
       },
       {
         heading: "Sections",
@@ -50,6 +50,9 @@ export const CASE_STUDIES: CaseStudy[] = [
           "Internet connection down.",
           "Slow Wi-Fi troubleshooting.",
           "Modem and router restart validation.",
+          "Windows sign-in and workstation setup checks.",
+          "Microsoft 365, Teams, OneDrive, and SharePoint user support notes.",
+          "Printer, phone, scanner, webcam, and mobile device checks.",
           "DNS issue checklist.",
           "Windows, macOS, Android, and iOS device notes.",
           "Escalation criteria for level 2 support.",
@@ -58,7 +61,7 @@ export const CASE_STUDIES: CaseStudy[] = [
       {
         heading: "Value",
         content:
-          "This supports the IT support profile by proving clear diagnostic thinking, customer-friendly explanation, and documentation discipline.",
+          "This supports the Client Support Analyst profile by proving clear diagnostic thinking, user-friendly explanation, technical documentation, and escalation discipline.",
       },
     ],
   },

@@ -1,24 +1,24 @@
 # Hi, I'm Papa Amadou Fall
 
-**Bilingual Technical Support Specialist | User Support Technician | Web & Automation Enthusiast**
+**Client Support Analyst | Bilingual IT Support | Web & Automation Enthusiast**
 
-I help users solve technical problems clearly, patiently, and efficiently. My background combines customer-facing technical support, telecom troubleshooting, web development, and business process automation.
+I help users solve technical problems clearly, patiently, and efficiently. My background combines customer-facing IT support, telecom troubleshooting, helpdesk ticket documentation, web development, and business process automation.
 
-I am currently building my Canadian career path in British Columbia, with a focus on technical support, IT support, SaaS support, and junior web support roles.
+I am currently building my Canadian career path in British Columbia, with a focus on Client Support Analyst, IT support, help desk, SaaS support, and junior web support roles.
 
 ## Core Strengths
 
 - Bilingual support: French and English
-- Technical support level 1: internet, modem, router, telephony, and service troubleshooting
+- Technical support level 1 / intermediate support: internet, modem, router, telephony, account access, and service troubleshooting
 - Customer communication, active listening, and first-contact resolution
 - Ticket documentation, escalation, and procedure-based support
-- Windows, macOS, Android, iOS, Wi-Fi, IP, cabling, and DNS basics
+- Windows, Microsoft 365, Teams, OneDrive, SharePoint basics, macOS, Android, iOS, Wi-Fi, IP, cabling, printers, phones, and DNS basics
 - Web development foundations: JavaScript, TypeScript, React, Next.js, PHP, Python, MySQL
 - API and workflow automation with n8n
 
 ## Current Focus
 
-- Strengthening IT support and help desk skills
+- Strengthening Client Support Analyst, Microsoft 365, Windows, and helpdesk skills
 - Building practical support automation tools
 - Preparing for Canadian technical support and SaaS support roles
 - Continuing the transition from customer support into software and automation
@@ -27,7 +27,7 @@ I am currently building my Canadian career path in British Columbia, with a focu
 
 | Area | What I Build |
 | --- | --- |
-| Technical Support | troubleshooting guides, support scripts, ticket workflows |
+| Client Support | troubleshooting guides, support scripts, ticket workflows |
 | Web Development | responsive business websites, React/Next.js interfaces |
 | Automation | n8n workflows, API integrations, lead capture systems |
 | Documentation | bilingual support notes and user-friendly technical explanations |
@@ -43,6 +43,7 @@ I am currently building my Canadian career path in British Columbia, with a focu
 
 My short-term target is a role such as:
 
+- Client Support Analyst
 - Bilingual Technical Support Specialist
 - IT Support Technician
 - Help Desk Technician

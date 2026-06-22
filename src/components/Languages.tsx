@@ -53,9 +53,21 @@ export default function Languages() {
                   </div>
                 </div>
 
-                <p className="m-0 mb-2 max-w-[280px] rounded-md border border-accent/20 bg-accent/[0.06] px-3 py-2 text-[12px] font-[800] leading-snug text-[#075e4f]">
-                  {card.source}
-                </p>
+                <div className="mb-3 flex flex-wrap items-center gap-2">
+                  <p className="m-0 rounded-md border border-accent/20 bg-accent/[0.06] px-3 py-2 text-[12px] font-[800] leading-snug text-[#075e4f]">
+                    {card.source}
+                  </p>
+                  {card.language === "French" && (
+                    <a
+                      href="/PapaAmadouFall/assets/TCF_Canada_Result.pdf"
+                      target="_blank"
+                      rel="noreferrer"
+                      className="inline-flex items-center gap-1.5 rounded-md border border-line bg-surface px-3 py-2 text-xs font-[800] text-foreground hover:bg-soft transition-colors shadow-sm"
+                    >
+                      📄 TCF Report (PDF)
+                    </a>
+                  )}
+                </div>
 
                 <p className="m-0 mb-5 max-w-[760px] text-[15px] leading-relaxed text-muted">
                   {card.description}
