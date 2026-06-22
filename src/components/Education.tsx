@@ -72,7 +72,7 @@ export default function Education() {
       </div>
 
       <ScrollReveal delay={200}>
-        <p className="mt-5 max-w-[860px] text-[13.5px] leading-relaxed text-[#7a8595]">
+        <p className="mt-5 max-w-[860px] text-[13.5px] leading-relaxed text-muted">
           Academic credentials and evaluation reports are available privately for verified hiring and immigration processes.{" "}
           <a
             href={`mailto:${SITE.email}`}

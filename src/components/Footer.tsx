@@ -6,7 +6,7 @@ export default function Footer() {
       <div className="flex items-center justify-between gap-5 max-[820px]:flex-col max-[820px]:items-start">
         <div>
           <p className="m-0 text-[13px] text-muted">&copy; 2026 {SITE.name}</p>
-          <p className="m-0 mt-1 text-[12px] text-[#a0a8b4]">
+          <p className="m-0 mt-1 text-[12px] text-muted">
             Built with Next.js, React, and Tailwind CSS. Deployed on GitHub Pages.
           </p>
         </div>

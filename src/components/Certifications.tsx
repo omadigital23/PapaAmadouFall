@@ -56,7 +56,7 @@ export default function Certifications() {
       </div>
 
       <ScrollReveal delay={350}>
-        <p className="mt-5 max-w-[860px] text-[13.5px] leading-relaxed text-[#7a8595]">
+        <p className="mt-5 max-w-[860px] text-[13.5px] leading-relaxed text-muted">
           {CERTIFICATIONS_HEADER.note}{" "}
           <a
             href={`mailto:${SITE.email}`}

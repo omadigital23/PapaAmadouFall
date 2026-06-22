@@ -49,7 +49,7 @@ export default function Experience() {
       </div>
 
       <ScrollReveal delay={300}>
-        <p className="max-w-[860px] mt-5 text-[#7a8595] text-[13.5px] leading-relaxed">
+        <p className="max-w-[860px] mt-5 text-muted text-[13.5px] leading-relaxed">
           {EXPERIENCE_NOTE}
         </p>
       </ScrollReveal>
