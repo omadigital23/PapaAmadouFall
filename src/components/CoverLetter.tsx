@@ -59,14 +59,14 @@ export default function CoverLetter() {
             </div>
           </div>
 
-          {/* LMIA-Exempt badge & Download */}
+          {/* Work authorization note and download */}
           <div className="flex flex-wrap items-center justify-between gap-4 border-t border-line bg-accent/[0.06] px-[clamp(24px,4vw,40px)] py-4">
             <div className="flex items-center gap-2">
               <span className="inline-flex items-center gap-1.5 rounded-md border border-accent/30 bg-accent/15 px-2.5 py-1.5 text-[11px] font-[900] tracking-wide text-[#075e4f]">
-                ✅ LMIA-EXEMPT
+                WORK PERMIT SUPPORT REQUIRED
               </span>
               <span className="text-[12px] text-muted">
-                Mobilité Francophone (C16) — No employer LMIA cost or delay
+                Employer-specific permit now; C16/Francophone Mobility may be available if eligible.
               </span>
             </div>
             <a
