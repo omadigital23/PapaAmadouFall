@@ -109,9 +109,9 @@ export interface CaseStudy {
 
 export const SITE = {
   name: "Papa Amadou Fall",
-  title: "Papa Amadou Fall | Client Support Analyst & Bilingual IT Support",
+  title: "Papa Amadou Fall | IT Support Specialist & Help Desk Analyst",
   description:
-    "Client Support Analyst and bilingual French-English IT support profile in British Columbia focused on helpdesk support, Windows and Microsoft 365 user environments, telecom troubleshooting, SaaS support, web support, and practical n8n automation infrastructure.",
+    "Bilingual French-English IT Support Specialist and Help Desk Analyst profile in British Columbia focused on Microsoft 365 and Windows user support, networking fundamentals, telecom troubleshooting, SaaS support, web support, and practical n8n automation infrastructure.",
   url: "https://omadigital23.github.io/PapaAmadouFall/",
   basePath: "/PapaAmadouFall",
   github: "https://github.com/omadigital23",
@@ -139,12 +139,12 @@ export const NAV_LINKS = [
 ] as const;
 
 export const HERO = {
-  eyebrow: "Campbell River, BC | Bilingual Support Specialist | Employer-Supported Work Permit Path",
+  eyebrow: "Campbell River, BC | IT Support Specialist | Help Desk Analyst | Bilingual FR/EN",
   firstName: "Papa Amadou",
   lastName: "Fall",
   kicker: "Bilingual Technical Support Representative with 5+ years of user-facing technical support - available to interview now.",
   text:
-    "I help support teams troubleshoot internet, Wi-Fi, modem/router, telephony and account issues clearly, document tickets with precision, communicate in French and English, and deliver consistent customer satisfaction. I am currently based in Campbell River, BC on an employer-specific work permit. A new employer-supported work permit or written IRCC authorization would be required before I can start with a new employer; eligible employers outside Quebec may be able to use the LMIA-exempt Francophone Mobility/C16 pathway.",
+    "I help support teams troubleshoot internet, Wi-Fi, modem/router, telephony and account issues clearly, document tickets with precision, communicate in French and English, and deliver consistent customer satisfaction. I am currently based in Campbell River, BC on an employer-specific work permit. For a new employer outside Quebec, the LMIA-exempt Francophone Mobility/C16 pathway may be an option, and I would be happy to discuss a compliant start plan.",
 } as const;
 
 export const HERO_FACTS = [
@@ -181,7 +181,7 @@ export const PROFILE = {
   eyebrow: "Professional Profile",
   heading: "A calm support operator for structured user environments.",
   text:
-    "My strongest fit is a Client Support Analyst or bilingual IT support role where clear troubleshooting, precise ticket notes, customer reassurance, Microsoft 365 and Windows user support, and escalation judgment matter. My web background adds technical range, while my telecom support experience keeps the profile focused on users, tickets, and practical resolution.",
+    "My strongest fit is an IT Support Specialist, Help Desk Analyst, or Technical Support Representative role where clear troubleshooting, precise ticket notes, customer reassurance, Microsoft 365 and Windows user support, and escalation judgment matter. My web background adds technical range, while my telecom support experience keeps the profile focused on users, tickets, and practical resolution.",
 } as const;
 
 export const CAPABILITIES: Capability[] = [
@@ -644,7 +644,9 @@ export const ROLES_HEADER = {
 
 export const TARGET_ROLES = [
   "Technical Support Representative",
-  "Bilingual Technical Support Specialist",
+  "Bilingual IT Support Specialist",
+  "IT Support Specialist",
+  "Help Desk Analyst",
   "Help Desk Technician",
   "Service Desk Analyst",
   "IT Support Technician",
@@ -676,7 +678,7 @@ export const CONTACT = {
   eyebrow: "Contact",
   heading: "Available to interview for Technical Support, Help Desk and Service Desk roles.",
   text:
-    "Bilingual French-English (verified TCF Canada C1/B2), 5+ years of telecom technical support, and currently based in Campbell River, BC. I am on an employer-specific Canadian work permit; before starting with a new employer, I would need a new employer-specific work permit or written IRCC authorization. Eligible employers outside Quebec may be able to use the LMIA-exempt Francophone Mobility/C16 pathway.",
+    "Bilingual French-English (verified TCF Canada C1/B2), 5+ years of telecom technical support, and currently based in Campbell River, BC. I am on an employer-specific Canadian work permit. For a new employer outside Quebec, the LMIA-exempt Francophone Mobility/C16 pathway may be an option, and I would be happy to discuss a compliant start plan.",
 } as const;
 
 export const COVER_LETTER = {
@@ -688,7 +690,7 @@ export const COVER_LETTER = {
     "With more than five years of experience providing customer-facing technical support, I have developed strong troubleshooting, communication, and problem-solving skills. While supporting Videotron customers through XCM Sourcing from December 2020 to June 2026, I assisted users with internet connectivity, WiFi networks, modem and router configuration, telephony services, and account-related inquiries.",
     "In this role, I diagnosed technical issues, documented cases using CRM and ticketing systems, guided non-technical users through step-by-step resolutions, and escalated complex incidents to higher support tiers when necessary. Working daily in both French and English strengthened my ability to communicate clearly with diverse customers while consistently meeting quality and customer satisfaction objectives.",
     "In addition to my professional experience, I hold a Bachelor's Degree in Management Information Systems from Université de Thiès and continue to expand my technical knowledge through ongoing Google Cloud training. My technical foundation includes Microsoft 365, Windows environments, networking fundamentals, VPN connectivity, DNS, Active Directory basics, and remote support practices.",
-    "I am currently based in Campbell River, British Columbia, on an employer-specific Canadian work permit. Before starting with a new employer, I would need a new employer-specific work permit or written IRCC authorization. As a French-speaking candidate seeking work outside Quebec, I may be eligible for the LMIA-exempt Francophone Mobility/C16 pathway if the role and employer qualify.",
+    "I am currently based in Campbell River, British Columbia, on an employer-specific Canadian work permit. For a new employer outside Quebec, the LMIA-exempt Francophone Mobility/C16 pathway may be an option, and I would be happy to discuss a compliant start plan.",
     "I would welcome the opportunity to interview now and discuss a compliant start plan. My bilingual communication skills, customer service experience, and technical support background would allow me to contribute strongly once the required work authorization is in place.",
     "Thank you for your time and consideration. I would welcome the opportunity to discuss how my skills and experience can contribute to your organization's success."
   ],

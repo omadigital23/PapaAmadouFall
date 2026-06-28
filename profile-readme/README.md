@@ -1,10 +1,10 @@
 # Hi, I'm Papa Amadou Fall
 
-**Client Support Analyst | Bilingual IT Support | Web & Automation Enthusiast**
+**IT Support Specialist | Help Desk Analyst | Bilingual FR/EN | Web & Automation Enthusiast**
 
 I help users solve technical problems clearly, patiently, and efficiently. My background combines customer-facing IT support, telecom troubleshooting, helpdesk ticket documentation, web development, and business process automation.
 
-I am currently building my Canadian career path in British Columbia, with a focus on Client Support Analyst, IT support, help desk, SaaS support, and junior web support roles.
+I am currently building my Canadian career path in British Columbia, with a focus on IT Support Specialist, Help Desk Analyst, Technical Support Representative, SaaS support, and junior web support roles.
 
 ## Core Strengths
 
@@ -18,7 +18,7 @@ I am currently building my Canadian career path in British Columbia, with a focu
 
 ## Current Focus
 
-- Strengthening Client Support Analyst, Microsoft 365, Windows, and helpdesk skills
+- Strengthening IT Support Specialist, Microsoft 365, Windows, networking, and helpdesk skills
 - Building practical support automation tools
 - Preparing for Canadian technical support and SaaS support roles
 - Continuing the transition from customer support into software and automation
@@ -43,8 +43,10 @@ I am currently building my Canadian career path in British Columbia, with a focu
 
 My short-term target is a role such as:
 
-- Client Support Analyst
-- Bilingual Technical Support Specialist
+- IT Support Specialist
+- Help Desk Analyst
+- Technical Support Representative
+- Bilingual IT Support Specialist
 - IT Support Technician
 - Help Desk Technician
 - Technical Support Analyst
@@ -57,5 +59,5 @@ My long-term goal is to grow into software development, automation engineering, 
 
 - Location: Campbell River, British Columbia, Canada
 - Email: omadigital23@gmail.com
-- LinkedIn: https://www.linkedin.com/in/papa-amadou-bb95a01a1
+- LinkedIn: https://www.linkedin.com/in/papa-amadou-fall-bb95a01a1
 - Portfolio: https://omadigital23.github.io/PapaAmadouFall/

@@ -61,7 +61,7 @@ export const CASE_STUDIES: CaseStudy[] = [
       {
         heading: "Value",
         content:
-          "This supports the Client Support Analyst profile by proving clear diagnostic thinking, user-friendly explanation, technical documentation, and escalation discipline.",
+          "This supports the IT Support Specialist and Help Desk Analyst profile by proving clear diagnostic thinking, user-friendly explanation, technical documentation, and escalation discipline.",
       },
     ],
   },

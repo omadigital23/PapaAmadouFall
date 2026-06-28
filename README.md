@@ -1,6 +1,6 @@
 # Papa Amadou Fall Portfolio
 
-Professional portfolio for Papa Amadou Fall, positioned for Client Support Analyst, bilingual technical support, IT support, SaaS support, help desk, and junior web support roles.
+Professional portfolio for Papa Amadou Fall, positioned for IT Support Specialist, Help Desk Analyst, bilingual technical support, client support analyst, SaaS support, and junior web support roles.
 
 Live site:
 
@@ -10,7 +10,7 @@ https://omadigital23.github.io/PapaAmadouFall/
 
 Current positioning:
 
-- Client Support Analyst / bilingual French-English IT support profile
+- IT Support Specialist / Help Desk Analyst / bilingual French-English support profile
 - TCF Canada French proof: C1 listening, C1 reading, C1 writing, B2 speaking
 - 5+ years telecom N1 / client support experience
 - Windows, Microsoft 365, helpdesk documentation, peripheral support, web, DNS, HTTPS, n8n, API, and Next.js project evidence
