@@ -33,7 +33,7 @@ export default function Profile() {
             delay={index * 80}
             className={index === CAPABILITIES.length - 1 ? "col-span-2 max-[820px]:col-span-1" : ""}
           >
-            <article className="min-h-[210px] rounded-lg border border-line bg-surface p-5.5 transition-all duration-200 hover:shadow-[0_16px_48px_rgba(16,24,39,0.08)] max-[820px]:min-h-auto">
+            <article className="min-h-[184px] rounded-lg border border-line bg-surface p-5 transition-all duration-200 hover:-translate-y-0.5 hover:shadow-[0_16px_48px_rgba(16,24,39,0.08)] max-[820px]:min-h-auto">
               <span
                 className={`mb-4 inline-flex rounded-md px-2 py-1.5 text-xs font-[900] ${capability.tagStyle}`}
               >

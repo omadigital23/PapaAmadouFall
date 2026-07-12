@@ -6,6 +6,7 @@ import { AVAILABILITY, NAV_LINKS, SITE } from "@/lib/constants";
 
 export default function Header() {
   const [scrolled, setScrolled] = useState(false);
+  const [menuOpen, setMenuOpen] = useState(false);
 
   useEffect(() => {
     const onScroll = () => setScrolled(window.scrollY > 20);
@@ -23,7 +24,7 @@ export default function Header() {
   return (
     <header
       id="site-header"
-      className={`fixed left-0 right-0 top-0 z-30 flex items-center justify-between gap-6 px-[clamp(18px,4vw,56px)] py-4 text-[#f7fafc] backdrop-blur-[18px] transition-shadow duration-300 max-[900px]:flex-col max-[900px]:items-start max-[900px]:gap-3 ${
+      className={`fixed left-0 right-0 top-0 z-30 flex items-center justify-between gap-6 px-[clamp(18px,4vw,56px)] py-3.5 text-[#f7fafc] backdrop-blur-[18px] transition-shadow duration-300 max-[900px]:gap-3 max-[700px]:flex-wrap ${
         scrolled
           ? "border-b border-white/10 bg-deep/88 shadow-[0_8px_32px_rgba(0,0,0,0.3)]"
           : "border-b border-white/12 bg-deep/72"
@@ -38,25 +39,42 @@ export default function Header() {
         <Image
           src={SITE.profileLogo}
           alt=""
-          width={36}
-          height={36}
-          className="block rounded-full object-cover shadow-[0_0_0_2px_rgba(155,227,213,0.42),0_8px_24px_rgba(0,0,0,0.28)]"
+          width={42}
+          height={42}
+          className="block rounded-xl object-contain shadow-[0_0_0_2px_rgba(155,227,213,0.42),0_8px_24px_rgba(0,0,0,0.28)]"
           priority
         />
         <span>{SITE.name}</span>
       </a>
 
-      <div className="flex items-center gap-5 max-[900px]:w-full max-[900px]:justify-between max-[900px]:gap-2.5 max-[700px]:flex-wrap">
+      <button
+        type="button"
+        className="ml-auto hidden min-h-10 items-center gap-2 rounded-lg border border-white/18 bg-white/8 px-3 text-sm font-[800] text-white max-[700px]:inline-flex"
+        aria-expanded={menuOpen}
+        aria-controls="mobile-navigation"
+        onClick={() => setMenuOpen((open) => !open)}
+      >
+        <span aria-hidden="true" className="text-lg leading-none">{menuOpen ? "×" : "☰"}</span>
+        Menu
+      </button>
+
+      <div
+        id="mobile-navigation"
+        className={`${menuOpen ? "max-[700px]:flex" : "max-[700px]:hidden"} flex items-center gap-5 max-[900px]:gap-3 max-[700px]:w-full max-[700px]:flex-col max-[700px]:items-stretch`}
+      >
         <nav
-          className="nav-scroll flex items-center gap-5 text-sm font-[800] text-white/76 max-[900px]:gap-3 max-[700px]:order-3 max-[700px]:w-full max-[700px]:overflow-x-auto max-[700px]:pb-1 max-[700px]:text-[13px]"
+          className="flex items-center gap-5 text-sm font-[800] text-white/76 max-[900px]:gap-3 max-[700px]:grid max-[700px]:grid-cols-2 max-[700px]:gap-2 max-[700px]:text-[13px]"
           aria-label="Portfolio sections"
         >
           {NAV_LINKS.map((link) => (
             <a
               key={link.href}
               href={link.href}
-              className="whitespace-nowrap no-underline transition-colors duration-200 hover:text-white focus-visible:text-white focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-accent-light"
-              onClick={(event) => handleClick(event, link.href)}
+              className="whitespace-nowrap rounded-md border border-white/10 bg-white/[0.04] px-3 py-2 no-underline transition-colors duration-200 hover:bg-white/10 hover:text-white focus-visible:text-white focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-accent-light max-[700px]:text-center"
+              onClick={(event) => {
+                handleClick(event, link.href);
+                setMenuOpen(false);
+              }}
             >
               {link.label}
             </a>
@@ -77,7 +95,7 @@ export default function Header() {
 
         <a
           href={`mailto:${SITE.email}`}
-          className="inline-flex max-w-full items-center gap-1.5 rounded-full border border-accent/40 bg-accent/20 px-3 py-1.5 text-[11px] font-[800] text-accent-light no-underline transition-all duration-200 hover:bg-accent/30"
+          className="inline-flex max-w-full items-center gap-1.5 rounded-full border border-accent/40 bg-accent/20 px-3 py-1.5 text-[11px] font-[800] text-accent-light no-underline transition-all duration-200 hover:bg-accent/30 max-[700px]:justify-center"
           aria-label={`${AVAILABILITY.status} - ${AVAILABILITY.location}`}
         >
           <span
