@@ -48,7 +48,7 @@ export default function Header() {
 
       <div className="flex items-center gap-5 max-[900px]:w-full max-[900px]:justify-between max-[900px]:gap-2.5 max-[700px]:flex-wrap">
         <nav
-          className="flex items-center gap-5 text-sm font-[800] text-white/76 max-[900px]:gap-3 max-[700px]:order-3 max-[700px]:w-full max-[700px]:overflow-x-auto max-[700px]:pb-1 max-[700px]:text-[13px]"
+          className="nav-scroll flex items-center gap-5 text-sm font-[800] text-white/76 max-[900px]:gap-3 max-[700px]:order-3 max-[700px]:w-full max-[700px]:overflow-x-auto max-[700px]:pb-1 max-[700px]:text-[13px]"
           aria-label="Portfolio sections"
         >
           {NAV_LINKS.map((link) => (

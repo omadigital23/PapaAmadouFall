@@ -20,6 +20,8 @@ export const metadata: Metadata = {
     "Help Desk Analyst",
     "Technical Support Representative",
     "Bilingual IT Support Specialist",
+    "Bilingual Technical Support Representative",
+    "Customer De-escalation",
     "IT Support",
     "Help Desk",
     "Microsoft 365 Support",
@@ -65,10 +67,12 @@ const jsonLd = {
   name: "Papa Amadou Fall",
   url: SITE.url,
   email: SITE.email,
-  jobTitle: "IT Support Specialist",
+  jobTitle: "Bilingual IT Support Specialist",
+  telephone: SITE.phone,
   knowsLanguage: [
     { "@type": "Language", name: "French", alternateName: "fr" },
     { "@type": "Language", name: "English", alternateName: "en" },
+    { "@type": "Language", name: "Wolof", alternateName: "wo" },
   ],
   sameAs: [SITE.github, SITE.linkedin],
   address: {

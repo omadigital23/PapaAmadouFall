@@ -1,4 +1,4 @@
-import { COVER_LETTER } from "@/lib/constants";
+import { COVER_LETTER, SITE } from "@/lib/constants";
 import ScrollReveal from "./ScrollReveal";
 
 export default function CoverLetter() {
@@ -63,14 +63,14 @@ export default function CoverLetter() {
           <div className="flex flex-wrap items-center justify-between gap-4 border-t border-line bg-accent/[0.06] px-[clamp(24px,4vw,40px)] py-4">
             <div className="flex items-center gap-2">
               <span className="inline-flex items-center gap-1.5 rounded-md border border-accent/30 bg-accent/15 px-2.5 py-1.5 text-[11px] font-[900] tracking-wide text-[#075e4f]">
-                WORK PERMIT SUPPORT REQUIRED
+                WORK AUTHORIZATION
               </span>
               <span className="text-[12px] text-muted">
-                Employer-specific permit now; C16/Francophone Mobility may be available if eligible.
+                Valid employer-specific Francophone Mobility permit; an employer-change process is required before starting.
               </span>
             </div>
             <a
-              href="/PapaAmadouFall/assets/Papa_Amadou_Fall_Cover_Letter.pdf"
+              href={SITE.coverLetter}
               target="_blank"
               rel="noreferrer"
               className="inline-flex items-center gap-1.5 rounded-md border border-line bg-surface px-3 py-2 text-xs font-[800] text-foreground hover:bg-soft transition-colors shadow-sm"

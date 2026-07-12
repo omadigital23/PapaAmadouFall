@@ -28,8 +28,7 @@ export default function Languages() {
           </div>
         </ScrollReveal>
 
-        {/* Grille 3 colonnes : FR (large) + EN + WO */}
-        <div className="grid grid-cols-[minmax(0,1.2fr)_minmax(0,1fr)_minmax(0,0.85fr)] gap-4 max-[1100px]:grid-cols-[1fr_1fr] max-[680px]:grid-cols-1">
+        <div className="grid grid-cols-[minmax(0,1.2fr)_minmax(0,1fr)_minmax(0,0.85fr)] gap-4 max-[1100px]:grid-cols-2 max-[680px]:grid-cols-1">
           {LANGUAGE_CARDS.map((card, cardIndex) => (
             <ScrollReveal key={card.language} delay={cardIndex * 100}>
               <article className="h-full rounded-lg border border-line bg-white p-6 shadow-[0_14px_46px_rgba(16,24,39,0.05)] transition-all duration-300 hover:shadow-[0_20px_60px_rgba(16,24,39,0.1)]">
@@ -42,7 +41,9 @@ export default function Languages() {
                       </span>
                       <span
                         className="inline-flex items-center rounded-full bg-accent px-3 py-1 text-[11px] font-[900] tracking-wider text-white shadow-[0_4px_14px_rgba(13,124,102,0.25)]"
-                        style={{ animation: "badgePop 0.5s cubic-bezier(0.34, 1.56, 0.64, 1) forwards" }}
+                        style={{
+                          animation: "badgePop 0.5s cubic-bezier(0.34, 1.56, 0.64, 1) forwards",
+                        }}
                       >
                         {card.globalLevel}
                       </span>
@@ -62,9 +63,9 @@ export default function Languages() {
                       href="/PapaAmadouFall/assets/TCF_Canada_Result.pdf"
                       target="_blank"
                       rel="noreferrer"
-                      className="inline-flex items-center gap-1.5 rounded-md border border-line bg-surface px-3 py-2 text-xs font-[800] text-foreground hover:bg-soft transition-colors shadow-sm"
+                      className="inline-flex items-center gap-1.5 rounded-md border border-line bg-surface px-3 py-2 text-xs font-[800] text-foreground shadow-sm transition-colors hover:bg-soft"
                     >
-                      📄 TCF Report (PDF)
+                      TCF Report (PDF)
                     </a>
                   )}
                 </div>

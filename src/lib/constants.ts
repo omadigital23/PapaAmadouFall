@@ -4,6 +4,12 @@ export interface SignalItem {
   description: string;
 }
 
+export interface QuickFitItem {
+  label: string;
+  value: string;
+  detail: string;
+}
+
 export interface Capability {
   tag: string;
   tagStyle: string;
@@ -109,79 +115,114 @@ export interface CaseStudy {
 
 export const SITE = {
   name: "Papa Amadou Fall",
-  title: "Papa Amadou Fall | IT Support Specialist & Help Desk Analyst",
+  title: "Papa Amadou Fall | Bilingual IT Support Specialist",
   description:
-    "Bilingual French-English IT Support Specialist and Help Desk Analyst profile in British Columbia focused on Microsoft 365 and Windows user support, networking fundamentals, telecom troubleshooting, SaaS support, web support, and practical n8n automation infrastructure.",
+    "Bilingual French-English IT Support Specialist in Campbell River, BC, with 5+ years of telecom troubleshooting, help desk, customer support, Microsoft 365, Windows, networking, CRM, and ticketing experience.",
   url: "https://omadigital23.github.io/PapaAmadouFall/",
   basePath: "/PapaAmadouFall",
   github: "https://github.com/omadigital23",
   linkedin: "https://www.linkedin.com/in/papa-amadou-fall-bb95a01a1",
   email: "fallpape199@gmail.com",
-  cv: "/PapaAmadouFall/assets/Papa_Amadou_Fall_CV.pdf",
+  phone: "+1 250 204 8358",
+  phoneHref: "tel:+12502048358",
+  cv: "/PapaAmadouFall/assets/Papa_Amadou_Fall_IT_Support_Resume.pdf",
+  coverLetter: "/PapaAmadouFall/assets/Papa_Amadou_Fall_IT_Support_Cover_Letter.pdf",
   profileLogo: "/PapaAmadouFall/assets/papa-amadou-fall-profile-logo.svg",
 } as const;
 
 export const AVAILABILITY = {
-  status: "Open to Work - Employer support required",
+  status: "Open to interviews",
   location: "British Columbia, Canada",
   timezone: "Pacific Time",
 } as const;
 
 export const NAV_LINKS = [
-  { label: "Profile", href: "#profile" },
-  { label: "Languages", href: "#languages" },
-  { label: "Projects", href: "#projects" },
-  { label: "Proof", href: "#proof" },
   { label: "Experience", href: "#experience" },
-  { label: "Education", href: "#education" },
-  { label: "Cover Letter", href: "#cover-letter" },
+  { label: "Skills", href: "#profile" },
+  { label: "Projects", href: "#projects" },
+  { label: "Languages", href: "#languages" },
+  { label: "Documents", href: "#cover-letter" },
   { label: "Contact", href: "#contact" },
 ] as const;
 
 export const HERO = {
-  eyebrow: "Campbell River, BC | IT Support Specialist | Help Desk Analyst | Bilingual FR/EN",
+  eyebrow: "Campbell River, BC | French-English | Open to relocation",
   firstName: "Papa Amadou",
   lastName: "Fall",
-  kicker: "Bilingual Technical Support Representative with 5+ years of user-facing technical support - available to interview now.",
+  kicker: "Bilingual IT Support Specialist | Help Desk Analyst | Technical Support Representative",
   text:
-    "I help support teams troubleshoot internet, Wi-Fi, modem/router, telephony and account issues clearly, document tickets with precision, communicate in French and English, and deliver consistent customer satisfaction. I am currently based in Campbell River, BC on an employer-specific work permit. For a new employer outside Quebec, the LMIA-exempt Francophone Mobility/C16 pathway may be an option, and I would be happy to discuss a compliant start plan.",
+    "I bring 5+ years of frontline technical support experience serving Videotron customers through XCM Sourcing. I combine structured remote troubleshooting, customer de-escalation, CRM/ticketing documentation, and clear French-English communication with practical web development and automation experience.",
 } as const;
 
 export const HERO_FACTS = [
-  { label: "Target Role", value: "Technical Support / Help Desk" },
-  { label: "Experience", value: "5+ years IT support" },
-  { label: "Languages", value: "French / English / Wolof" },
-  { label: "Work Permit", value: "Employer-specific - support required" },
+  { label: "Experience", value: "5+ years frontline support" },
+  { label: "Core Strength", value: "Diagnose, de-escalate, document" },
+  { label: "Languages", value: "French TCF C1/B2 | English professional" },
+  { label: "Mobility", value: "BC based, open to relocation" },
 ] as const;
 
 export const SIGNALS: SignalItem[] = [
   {
     number: "01",
-    title: "Client support",
-    description: "Level 1 support, Level 2 escalation judgment, helpdesk notes, and user follow-up.",
+    title: "Support-ready",
+    description: "Level 1 support, escalation judgment, helpdesk notes, and user follow-up.",
   },
   {
     number: "02",
-    title: "TCF Canada",
-    description: "French results: C1 listening, C1 reading, C1 writing, and B2 speaking.",
+    title: "Bilingual",
+    description: "French TCF Canada C1/B2 plus daily professional English support experience.",
   },
   {
     number: "03",
     title: "5+ years",
-    description: "Recent IT client support experience across telecom users, tickets, diagnostics, and escalation.",
+    description: "Telecom technical support across users, tickets, diagnostics, and escalation.",
   },
   {
     number: "04",
-    title: "Evidence-backed",
-    description: "CV, live sites, case studies, LinkedIn, and infrastructure proof for recruiter review.",
+    title: "Recruiter proof",
+    description: "CV, case studies, live sites, LinkedIn, and technical evidence in one place.",
   },
 ];
 
+export const QUICK_FIT_HEADER = {
+  eyebrow: "Recruiter Snapshot",
+  heading: "The support experience, technical range, and communication skills your users need.",
+  text:
+    "Strongest fit: bilingual Technical Support, Help Desk, Service Desk, SaaS Support, and customer-facing IT support roles. Secondary fit: junior full-stack roles where React, Next.js, TypeScript, APIs, and SQL are central.",
+} as const;
+
+export const QUICK_FIT: QuickFitItem[] = [
+  {
+    label: "Problems solved",
+    value: "Connectivity, access, devices",
+    detail:
+      "Internet, Wi-Fi, modem/router, mobile, telephony, account access, Windows, Microsoft 365, DNS/VPN basics, and common SaaS workflows.",
+  },
+  {
+    label: "Support method",
+    value: "Diagnose, document, escalate",
+    detail:
+      "Confirm symptoms, guide the user, test the likely cause, record clear notes, resolve when possible, and escalate with useful context.",
+  },
+  {
+    label: "Communication",
+    value: "French, English and Wolof",
+    detail:
+      "TCF Canada French at C1 listening, reading and writing, B2 speaking, professional working English, and native Wolof.",
+  },
+  {
+    label: "Work authorization",
+    value: "Valid employer-specific permit",
+    detail:
+      "Currently authorized under an employer-specific LMIA-exempt Francophone Mobility work permit. Changing employers requires the appropriate employer-supported LMIA-exempt process before starting.",
+  },
+] as const;
+
 export const PROFILE = {
   eyebrow: "Professional Profile",
-  heading: "A calm support operator for structured user environments.",
+  heading: "Frontline support discipline, backed by practical technical depth.",
   text:
-    "My strongest fit is an IT Support Specialist, Help Desk Analyst, or Technical Support Representative role where clear troubleshooting, precise ticket notes, customer reassurance, Microsoft 365 and Windows user support, and escalation judgment matter. My web background adds technical range, while my telecom support experience keeps the profile focused on users, tickets, and practical resolution.",
+    "Bilingual IT Support Specialist with 5+ years of frontline technical support experience supporting Videotron customers through XCM Sourcing. Strong in remote troubleshooting, Microsoft 365, Windows/macOS, Android/iOS, TCP/IP, DNS, VPN, Wi-Fi, modem/router configuration, CRM/ticketing documentation, incident escalation, customer de-escalation, and clear French-English communication.",
 } as const;
 
 export const CAPABILITIES: Capability[] = [
@@ -204,7 +245,7 @@ export const CAPABILITIES: Capability[] = [
     tagStyle: "cap-tag-systems",
     title: "Microsoft 365 & Devices",
     description:
-      "Windows, Office / Microsoft 365, Teams, OneDrive, SharePoint basics, macOS, Android, iOS, IP basics, DNS basics, cabling, phones, printers, and common SaaS workflows.",
+      "Microsoft 365, Outlook, Teams, OneDrive, SharePoint, Windows 10/11, macOS, Android, iOS, Active Directory basics, Microsoft Entra ID basics, and Remote Desktop.",
   },
   {
     tag: "Documentation",
@@ -216,15 +257,15 @@ export const CAPABILITIES: Capability[] = [
   {
     tag: "Growth",
     tagStyle: "cap-tag-growth",
-    title: "Cloud, Web & Automation",
+    title: "Web, SaaS & Automation",
     description:
-      "JavaScript, TypeScript, React, Next.js, PHP, Python, MySQL, APIs, n8n, Nginx, DNS, HTTPS, workflow automation, and cloud learning.",
+      "JavaScript, TypeScript, React, Next.js, Node.js, PHP, Python, MySQL, REST APIs, Supabase/PostgreSQL, Git/GitHub, Vercel, n8n, DNS, and HTTPS.",
   },
 ];
 
 export const PROJECTS_HEADER = {
-  eyebrow: "Selected Work",
-  heading: "Work samples that connect support discipline with technical delivery.",
+  eyebrow: "Support Evidence",
+  heading: "Case studies that show how I think through tickets, users, and systems.",
   githubLink: "github.com/omadigital23",
 } as const;
 
@@ -261,58 +302,13 @@ export const PROJECTS: Project[] = [
     href: "/PapaAmadouFall/case-studies/web-development-portfolio",
     style: "normal",
   },
-  {
-    tag: "Business Site",
-    title: "OMA Digital",
-    description:
-      "Agency website for web development, mobile applications, AI automation, video creation, and international services.",
-    href: "https://www.omadigital.net/en",
-    style: "live",
-    external: true,
-  },
-  {
-    tag: "Client Site",
-    title: "SOJIF Consulting",
-    description:
-      "Professional consulting website for law, finance, HR, business structuring, recruitment, and digitalization services.",
-    href: "https://www.sojifconsulting.com/en",
-    style: "live",
-    external: true,
-  },
-  {
-    tag: "Commerce Site",
-    title: "Nubia Aura",
-    description:
-      "Fashion and custom tailoring platform with catalog presentation, WhatsApp support, payments, and product discovery.",
-    href: "https://www.nubiaaura.com/en",
-    style: "live",
-    external: true,
-  },
-  {
-    tag: "Learning App",
-    title: "Cloud Cert",
-    description:
-      "Interactive Google Cloud networking study path with modules, quiz tracking, topology concepts, and bilingual interface.",
-    href: "https://cloud-cert.vercel.app/",
-    style: "live",
-    external: true,
-  },
-  {
-    tag: "SaaS Login",
-    title: "OMA Compta",
-    description:
-      "SYSCOHADA accounting platform login experience for West African SMEs, with clean product positioning and secure access flow.",
-    href: "https://oma-compta.vercel.app/login",
-    style: "live",
-    external: true,
-  },
 ];
 
 export const EVIDENCE_HEADER = {
   eyebrow: "Evidence Layer",
-  heading: "Proof that the support profile maps to real client environments.",
+  heading: "Proof that the support profile maps to real work environments.",
   text:
-    "The portfolio connects helpdesk discipline with visible delivery: ticket thinking, user documentation, live websites, automation infrastructure, DNS/HTTPS deployment, and documented case studies.",
+    "The portfolio connects helpdesk discipline with visible delivery: ticket thinking, user documentation, live websites, automation infrastructure, DNS/HTTPS deployment, and documented case studies that a recruiter can inspect quickly.",
 } as const;
 
 export const EVIDENCE_METRICS: EvidenceMetric[] = [
@@ -340,18 +336,18 @@ export const EVIDENCE_METRICS: EvidenceMetric[] = [
 
 export const LANGUAGE_HEADER = {
   eyebrow: "Languages",
-  heading: "Trilingual profile — verified French, professional English, native Wolof.",
+  heading: "Verified French, professional working English, and native Wolof.",
   text:
-    "Language precision matters in support: users need calm explanations, accurate notes, and clear follow-up at every step. French is certified through TCF Canada (C1/B2). English is used daily for technical support, web work, and team communication. Wolof is my mother tongue.",
+    "French is certified through TCF Canada at C1 listening, reading and writing, and B2 speaking. English is used professionally for support, technical reading and documentation. Wolof is my native language.",
 } as const;
 
 export const LANGUAGE_CARDS: LanguageCard[] = [
   {
     language: "French",
-    flag: "🇫🇷",
+    flag: "FR",
     globalLevel: "C1",
     headline: "Verified TCF Canada results",
-    source: "TCF Canada — February 2026 | Valid until February 2028",
+    source: "TCF Canada - February 2026 | Valid until February 2028",
     description:
       "Certified professional French for customer support, documentation, guided troubleshooting, and written follow-up. TCF Canada is the official French proficiency test recognized by IRCC for Canadian immigration and recruitment.",
     results: [
@@ -387,34 +383,34 @@ export const LANGUAGE_CARDS: LanguageCard[] = [
   },
   {
     language: "English",
-    flag: "🇬🇧",
-    globalLevel: "C1",
-    headline: "C1 proficiency — 10 years bilingual work experience",
-    source: "10 years bilingual at XCEED/Videotron & ELIM Peche | Daily professional use",
+    flag: "EN",
+    globalLevel: "Professional",
+    headline: "Professional working proficiency",
+    source: "Daily professional use in support, web work, documentation, and recruiter communication",
     description:
-      "Professional English validated by over 10 years of daily bilingual work: technical support at XCEED/Videotron serving English-speaking customers, logistics coordination at ELIM Peche, web development, and recruiter correspondence. C1 level across all professional contexts.",
+      "Professional English used for customer support, technical reading, documentation, web projects, and recruiter communication. I keep the claim practical and evidence-based: strong enough for bilingual support roles, without presenting it as an official English test result.",
     results: [
       {
         skill: "Support communication",
-        level: "C1 — Professional",
+        level: "Professional",
         detail: "Explain diagnostic checks, next steps, and escalation status clearly to English-speaking users and team leads.",
         strength: 88,
       },
       {
         skill: "Technical reading",
-        level: "C1 — Professional",
+        level: "Professional",
         detail: "Work confidently with technical docs, SaaS tools, APIs, tickets, and deployment material.",
         strength: 90,
       },
       {
         skill: "Written follow-up",
-        level: "C1 — Professional",
+        level: "Professional",
         detail: "Write clear status updates, issue summaries, customer notes, and async team messages.",
         strength: 86,
       },
       {
         skill: "Spoken interaction",
-        level: "C1 — Professional",
+        level: "Professional",
         detail: "Handle customer calls, team syncs, interviews, and live interactions confidently in English.",
         strength: 84,
       },
@@ -422,29 +418,23 @@ export const LANGUAGE_CARDS: LanguageCard[] = [
   },
   {
     language: "Wolof",
-    flag: "🇸🇳",
+    flag: "WO",
     globalLevel: "Native",
-    headline: "Native language — mother tongue",
-    source: "First language — spoken natively since childhood in Senegal",
+    headline: "Native language",
+    source: "First language - spoken natively since childhood in Senegal",
     description:
-      "Wolof is my first language, spoken natively since childhood in Thiès, Senegal. It is the most widely spoken language in Senegal and serves as a regional lingua franca across West Africa.",
+      "Native Wolof communication with full cultural and contextual fluency for spoken customer, team, and community interactions.",
     results: [
       {
         skill: "Oral communication",
-        level: "Native — C2",
-        detail: "Full native fluency for any spoken context: informal, professional, and community.",
+        level: "Native",
+        detail: "Natural fluency across informal, professional, and community settings.",
         strength: 100,
       },
       {
         skill: "Comprehension",
-        level: "Native — C2",
-        detail: "Complete natural understanding of all registers, accents, and cultural contexts.",
-        strength: 100,
-      },
-      {
-        skill: "Cultural literacy",
         level: "Native",
-        detail: "Full cultural and contextual fluency across Senegambian speech communities.",
+        detail: "Complete understanding of everyday speech, context, and regional expression.",
         strength: 100,
       },
     ],
@@ -544,26 +534,15 @@ export const PROJECT_PROOFS: ProjectProof[] = [
 
 export const EXPERIENCE_HEADER = {
   eyebrow: "Experience",
-  heading: "Client-facing support, workplace reliability, and technical range.",
+  heading: "Technical support first, with Canadian workplace reliability.",
 } as const;
 
 export const EXPERIENCE: ExperienceItem[] = [
   {
-    period: "Jun 2026 – Present",
-    role: "Customer Service Team Member — Tim Hortons",
+    period: "Dec 2020 - Jun 2026",
+    role: "Technical Support Representative - XCM Sourcing (Videotron Project)",
     description:
-      "Front-line customer service in a high-volume Canadian restaurant environment. Operating POS systems, resolving client inquiries, coordinating with team members, and building communication and punctuality skills directly transferable to IT help desk and service desk roles.",
-    tags: [
-      { label: "Canadian workplace", style: "exp-tag-telecom" },
-      { label: "Customer service", style: "exp-tag-csat" },
-      { label: "Campbell River, BC", style: "exp-tag-bilingual" },
-    ],
-  },
-  {
-    period: "Dec 2020 – Jun 2026",
-    role: "Bilingual Technical Support Representative — XCM Sourcing (Videotron)",
-    description:
-      "Resolved internet, Wi-Fi, modem/router, telephony and mobile service issues for residential customers. Used troubleshooting procedures to identify root causes and restore services. Managed customer interactions through ticketing and CRM systems. Delivered support in both French and English while maintaining quality and customer satisfaction targets. Escalated complex technical incidents to higher support levels when required.",
+      "Resolved internet, Wi-Fi, modem/router, telephony, mobile service, and account access issues for residential customers. Used troubleshooting procedures to identify root causes, restore service, document cases in CRM/ticketing tools, and escalate complex incidents with clear context. Delivered bilingual French-English support while maintaining quality and customer satisfaction expectations.",
     tags: [
       { label: "Bilingual FR/EN", style: "exp-tag-bilingual" },
       { label: "Helpdesk / CRM", style: "exp-tag-docs" },
@@ -572,30 +551,31 @@ export const EXPERIENCE: ExperienceItem[] = [
     ],
   },
   {
-    period: "2016 - 2020",
-    role: "Stock Manager & Assistant Manager",
+    period: "2015 - Present",
+    role: "Web Developer / Automation Builder - OMA Digital (Freelance / Part-time)",
     description:
-      "Managed inventory tracking, production reporting, stock organization, and team coordination. Maintained reporting and documentation discipline transferable to support ticketing.",
+      "Built and maintained websites, support workflows, and automation tools using React, Next.js, TypeScript, JavaScript, Node.js, APIs, SQL, and Supabase/PostgreSQL. This project-based experience supports SaaS, implementation, and customer-facing technical support roles by combining product troubleshooting, documentation, deployment awareness, and user guidance.",
     tags: [
-      { label: "Stock reporting", style: "exp-tag-stock" },
-      { label: "Operations", style: "exp-tag-logistics" },
-      { label: "Documentation", style: "exp-tag-docs" },
+      { label: "React / Next.js", style: "exp-tag-web" },
+      { label: "SQL / APIs", style: "exp-tag-web" },
+      { label: "SaaS support", style: "exp-tag-docs" },
     ],
   },
   {
-    period: "2015 - 2016",
-    role: "Web Developer & Maintenance Technician",
+    period: "Jun 2026 - Present",
+    role: "Customer Service Team Member - Tim Hortons",
     description:
-      "Developed and maintained web applications and internal tools using PHP, JavaScript, and MySQL. Performed database updates, troubleshooting, and user support.",
+      "Front-line customer service in a high-volume Canadian workplace. Operates POS systems, resolves customer inquiries, coordinates with team members, follows procedures, and builds Canadian workplace references while actively pursuing a qualified IT support role.",
     tags: [
-      { label: "Web support", style: "exp-tag-web" },
-      { label: "PHP / MySQL", style: "exp-tag-web" },
+      { label: "Canadian workplace", style: "exp-tag-telecom" },
+      { label: "Customer service", style: "exp-tag-csat" },
+      { label: "Campbell River, BC", style: "exp-tag-bilingual" },
     ],
   },
 ];
 
 export const EXPERIENCE_NOTE =
-  "Professional continuity across technical support, customer operations, logistics, documentation, and web maintenance. Employment references and supporting documents can be shared privately when appropriate.";
+  "Main profile: bilingual technical support and service desk readiness, strengthened by project-based web/SaaS support work and recent Canadian customer-service experience. Employment references and supporting documents can be shared privately when appropriate.";
 
 export const CERTIFICATIONS_HEADER = {
   eyebrow: "References",
@@ -606,7 +586,7 @@ export const CERTIFICATIONS_HEADER = {
 
 export const CERTIFICATIONS: Certification[] = [
   {
-    period: "Dec 2020 – Jun 2026",
+    period: "Dec 2020 - Jun 2026",
     title: "Technical Support Representative",
     issuer: "XCM Sourcing / Videotron",
     description:
@@ -616,22 +596,22 @@ export const CERTIFICATIONS: Certification[] = [
     available: true,
   },
   {
-    period: "2016 - 2020",
-    title: "Logistics & Operations",
-    issuer: "Elim Peche Ltd",
+    period: "2015 - Present",
+    title: "Project-Based Web & Automation Support",
+    issuer: "OMA Digital",
     description:
-      "Inventory reporting, stock reconciliation, logistics coordination, purchase order tracking, and operational documentation.",
-    tag: "Reference-ready",
+      "Portfolio evidence for React/Next.js, TypeScript, APIs, SQL, Supabase/PostgreSQL, deployment awareness, and SaaS-style support workflows.",
+    tag: "Portfolio proof",
     tagStyle: "cert-tag-contract",
     available: true,
   },
   {
-    period: "2015 - 2016",
-    title: "Web Developer & Maintenance",
-    issuer: "Net-Transact",
+    period: "Jun 2026 - Present",
+    title: "Canadian Customer Service Experience",
+    issuer: "Tim Hortons",
     description:
-      "Web application maintenance and internal user support using PHP, JavaScript, MySQL, and practical troubleshooting.",
-    tag: "Technical proof",
+      "Recent Canadian workplace experience showing reliability, punctuality, customer service, procedure discipline, and teamwork.",
+    tag: "Workplace proof",
     tagStyle: "cert-tag-employment",
     available: true,
   },
@@ -639,7 +619,7 @@ export const CERTIFICATIONS: Certification[] = [
 
 export const ROLES_HEADER = {
   eyebrow: "Target Roles",
-  heading: "Focused on support roles where bilingual communication is a technical advantage.",
+  heading: "Focused on bilingual support first, with a selective junior full-stack track.",
 } as const;
 
 export const TARGET_ROLES = [
@@ -650,8 +630,9 @@ export const TARGET_ROLES = [
   "Help Desk Technician",
   "Service Desk Analyst",
   "IT Support Technician",
-  "Customer Support Specialist",
-  "Telecommunications Support",
+  "Customer Support Engineer (SaaS)",
+  "Implementation Support Specialist",
+  "Junior Full-Stack Developer",
 ] as const;
 
 export const EDUCATION_HEADER = {
@@ -661,42 +642,40 @@ export const EDUCATION_HEADER = {
 
 export const EDUCATION: EducationItem[] = [
   {
-    period: "2011 — 2014",
-    degree: "Licence en Management Informatisé des Organisations",
-    institution: "Université Iba Der Thiam de Thiès",
-    system: "LMD System — 180 ECTS Credits",
-    mention: "Assez-Bien",
+    period: "2011 - 2014",
+    degree: "Bachelor's Degree in Management Information Systems",
+    institution: "University of Thies, Senegal",
+    system: "Three-year university degree",
+    mention: "Information systems, databases, web development, software engineering",
     description:
       "Three-year degree combining business management, information systems, database administration, and organizational computing. Provides the analytical and technical foundation for IT support, SaaS environments, and structured problem-solving.",
     tag: "University Degree",
     tagStyle: "cert-tag-employment",
-    note: "WES/ECA credential evaluation in progress for Canadian equivalency.",
   },
 ];
 
 export const CONTACT = {
   eyebrow: "Contact",
-  heading: "Available to interview for Technical Support, Help Desk and Service Desk roles.",
+  heading: "Available to interview for bilingual technical support roles.",
   text:
-    "Bilingual French-English (verified TCF Canada C1/B2), 5+ years of telecom technical support, and currently based in Campbell River, BC. I am on an employer-specific Canadian work permit. For a new employer outside Quebec, the LMIA-exempt Francophone Mobility/C16 pathway may be an option, and I would be happy to discuss a compliant start plan.",
+    "Based in Campbell River, BC, with 5+ years of technical support experience. Open to relocation for the right IT Support, Help Desk, Service Desk, SaaS Support, Customer Support Engineer, or strongly aligned junior full-stack opportunity.",
 } as const;
 
 export const COVER_LETTER = {
-  eyebrow: "Cover Letter",
-  heading: "Application Letter",
+  eyebrow: "Application Documents",
+  heading: "A consistent CV, cover letter, and portfolio for recruiter review.",
   salutation: "Dear Hiring Manager,",
   body: [
-    "I am writing to express my strong interest in the Technical Support Representative, Help Desk Analyst, or Service Desk Analyst position within your organization.",
-    "With more than five years of experience providing customer-facing technical support, I have developed strong troubleshooting, communication, and problem-solving skills. While supporting Videotron customers through XCM Sourcing from December 2020 to June 2026, I assisted users with internet connectivity, WiFi networks, modem and router configuration, telephony services, and account-related inquiries.",
-    "In this role, I diagnosed technical issues, documented cases using CRM and ticketing systems, guided non-technical users through step-by-step resolutions, and escalated complex incidents to higher support tiers when necessary. Working daily in both French and English strengthened my ability to communicate clearly with diverse customers while consistently meeting quality and customer satisfaction objectives.",
-    "In addition to my professional experience, I hold a Bachelor's Degree in Management Information Systems from Université de Thiès and continue to expand my technical knowledge through ongoing Google Cloud training. My technical foundation includes Microsoft 365, Windows environments, networking fundamentals, VPN connectivity, DNS, Active Directory basics, and remote support practices.",
-    "I am currently based in Campbell River, British Columbia, on an employer-specific Canadian work permit. For a new employer outside Quebec, the LMIA-exempt Francophone Mobility/C16 pathway may be an option, and I would be happy to discuss a compliant start plan.",
-    "I would welcome the opportunity to interview now and discuss a compliant start plan. My bilingual communication skills, customer service experience, and technical support background would allow me to contribute strongly once the required work authorization is in place.",
-    "Thank you for your time and consideration. I would welcome the opportunity to discuss how my skills and experience can contribute to your organization's success."
+    "I am applying for IT Support, Help Desk, Service Desk and Technical Support opportunities where bilingual communication, structured troubleshooting and strong customer service are essential. With more than five years of frontline technical support experience at XCM Sourcing on the Videotron project, I can help users resolve technical problems clearly, calmly and efficiently.",
+    "In this role, I supported Videotron customers with internet connectivity, Wi-Fi, modem and router configuration, mobile devices, telephony, account access and service-related issues. I diagnosed problems remotely, guided non-technical users through step-by-step solutions in French and English, documented cases in CRM and ticketing workflows, and escalated complex incidents with complete troubleshooting notes.",
+    "My technical foundation includes Microsoft 365, Outlook, Teams, OneDrive, SharePoint, Windows 10/11, macOS, Android/iOS, Active Directory and Microsoft Entra ID fundamentals, TCP/IP, DNS, VPN, Wi-Fi, modem/router troubleshooting and Remote Desktop. My additional experience with web development and automation - including JavaScript, TypeScript, PHP, Python, MySQL, REST APIs, Git/GitHub, Supabase and n8n - strengthens my systems thinking, problem-solving and ability to learn new tools quickly.",
+    "Since relocating to British Columbia, I have continued building Canadian workplace experience at Tim Hortons while actively pursuing a long-term return to the IT support field. I am known for patience, professional communication, accurate documentation, customer de-escalation and a practical approach to resolving technical issues.",
+    "I am currently authorized to work in Canada under a valid employer-specific LMIA-exempt Francophone Mobility work permit. Changing employers requires the appropriate employer-supported LMIA-exempt process before I can start. I am also open to relocation for the right IT support opportunity.",
+    "I would welcome the opportunity to discuss how my bilingual communication skills, technical support experience and practical technology background can help your team deliver reliable and professional support."
   ],
   closing: "Sincerely,",
   name: "Papa Amadou FALL",
-  contact: "fallpape199@gmail.com - www.linkedin.com/in/papa-amadou-fall-bb95a01a1",
+  contact: "fallpape199@gmail.com - www.linkedin.com/in/papa-amadou-fall-bb95a01a1 - omadigital23.github.io/PapaAmadouFall",
 } as const;
 
 export const CONSOLE_TICKETS = [

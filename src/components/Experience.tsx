@@ -3,7 +3,18 @@
 import { EXPERIENCE_HEADER, EXPERIENCE, EXPERIENCE_NOTE } from "@/lib/constants";
 import ScrollReveal from "./ScrollReveal";
 
+const experiencePriority = (role: string) => {
+  if (role.includes("Technical Support")) return 0;
+  if (role.includes("Web")) return 1;
+  if (role.includes("Tim Hortons")) return 2;
+  return 3;
+};
+
 export default function Experience() {
+  const orderedExperience = [...EXPERIENCE].sort(
+    (a, b) => experiencePriority(a.role) - experiencePriority(b.role),
+  );
+
   return (
     <section
       id="experience"
@@ -24,8 +35,8 @@ export default function Experience() {
         </div>
       </ScrollReveal>
 
-      <div className="mt-7 grid grid-cols-4 gap-4 max-[1080px]:grid-cols-2 max-[820px]:grid-cols-1">
-        {EXPERIENCE.map((exp, i) => (
+      <div className="mt-7 grid grid-cols-3 gap-4 max-[1080px]:grid-cols-2 max-[820px]:grid-cols-1">
+        {orderedExperience.map((exp, i) => (
           <ScrollReveal key={exp.period} delay={i * 100}>
             <article className="relative flex min-h-[240px] flex-col rounded-lg border border-line bg-surface p-6 transition-all duration-200 hover:-translate-y-0.5 hover:shadow-[0_16px_48px_rgba(16,24,39,0.08)] max-[820px]:min-h-auto">
               <span className="block mb-3.5 text-brass text-[13px] font-[900]">{exp.period}</span>

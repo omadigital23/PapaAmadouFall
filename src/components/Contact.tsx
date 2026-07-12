@@ -35,6 +35,13 @@ export default function Contact() {
             Email
           </a>
           <a
+            id="contact-phone-btn"
+            href={SITE.phoneHref}
+            className="inline-flex min-h-[46px] items-center justify-center rounded-[7px] border border-white/20 bg-white/8 px-[18px] py-3 text-sm font-[900] text-white no-underline transition-all duration-200 hover:-translate-y-0.5 hover:border-white/48 hover:bg-white/14"
+          >
+            {SITE.phone}
+          </a>
+          <a
             id="contact-linkedin-btn"
             href={SITE.linkedin}
             target="_blank"

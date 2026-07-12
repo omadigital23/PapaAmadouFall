@@ -39,40 +39,21 @@ export default function Hero() {
             {HERO.kicker}
           </p>
 
-          <p className="mt-4 max-w-[590px] text-[17px] leading-relaxed text-white/78 max-[900px]:text-base">
+          <p className="mt-4 max-w-[590px] text-[17px] leading-relaxed text-white/78 max-[900px]:text-base max-[560px]:hidden">
             {HERO.text}
           </p>
-
-          <dl className="mt-6 grid max-w-[620px] grid-cols-2 gap-2.5 max-[560px]:grid-cols-1">
-            {HERO_FACTS.map((fact) => (
-              <div
-                key={fact.label}
-                className="rounded-lg border border-white/12 bg-white/[0.055] px-4 py-3 shadow-[0_10px_30px_rgba(0,0,0,0.12)]"
-              >
-                <dt className="text-[11px] font-[900] uppercase tracking-[0.12em] text-accent-light">
-                  {fact.label}
-                </dt>
-                <dd className="m-0 mt-1 text-[14px] font-[800] leading-snug text-white">
-                  {fact.value}
-                </dd>
-              </div>
-            ))}
-          </dl>
+          <p className="mt-4 hidden max-w-[590px] text-[15px] leading-relaxed text-white/78 max-[560px]:block">
+            5+ years of bilingual frontline support, remote troubleshooting, customer de-escalation,
+            and CRM/ticketing documentation.
+          </p>
 
           <div className="mt-6 flex flex-wrap gap-3" aria-label="Primary links">
-            <a
-              id="hero-contact-btn"
-              href={`mailto:${SITE.email}`}
-              className="inline-flex min-h-[46px] items-center justify-center rounded-[7px] border border-accent bg-accent px-6 py-3 text-sm font-[900] text-white no-underline shadow-[0_4px_14px_rgba(13,124,102,0.3)] transition-all duration-200 hover:-translate-y-0.5 hover:bg-accent-hover hover:shadow-[0_8px_24px_rgba(13,124,102,0.4)] focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-accent-light"
-            >
-              Contact
-            </a>
             <a
               id="hero-cv-btn"
               href={SITE.cv}
               target="_blank"
               rel="noreferrer"
-              className="btn-cv"
+              className="inline-flex min-h-[46px] items-center justify-center gap-2 rounded-[7px] border border-accent bg-accent px-6 py-3 text-sm font-[900] text-white no-underline shadow-[0_4px_14px_rgba(13,124,102,0.3)] transition-all duration-200 hover:-translate-y-0.5 hover:bg-accent-hover hover:shadow-[0_8px_24px_rgba(13,124,102,0.4)] focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-accent-light"
               aria-label="Open Papa Amadou Fall CV PDF"
             >
               <svg
@@ -90,21 +71,46 @@ export default function Hero() {
                 <polyline points="7 10 12 15 17 10" />
                 <line x1="12" y1="15" x2="12" y2="3" />
               </svg>
-              CV
+              Download CV
+            </a>
+            <a
+              id="hero-contact-btn"
+              href={`mailto:${SITE.email}`}
+              className="btn-cv"
+            >
+              Email me
             </a>
             <a
               id="hero-github-btn"
-              href={SITE.github}
+              href={SITE.linkedin}
               target="_blank"
               rel="noreferrer"
               className="inline-flex min-h-[46px] items-center justify-center rounded-[7px] border border-white/20 bg-white/8 px-6 py-3 text-sm font-[900] text-white no-underline transition-all duration-200 hover:-translate-y-0.5 hover:border-white/48 hover:bg-white/14"
             >
-              GitHub
+              LinkedIn
             </a>
           </div>
+
+          <dl className="mt-6 grid max-w-[620px] grid-cols-2 gap-2.5">
+            {HERO_FACTS.map((fact, index) => (
+              <div
+                key={fact.label}
+                className={`rounded-lg border border-white/12 bg-white/[0.055] px-4 py-3 shadow-[0_10px_30px_rgba(0,0,0,0.12)] ${
+                  index >= 2 ? "max-[560px]:hidden" : ""
+                }`}
+              >
+                <dt className="text-[11px] font-[900] uppercase tracking-[0.12em] text-accent-light">
+                  {fact.label}
+                </dt>
+                <dd className="m-0 mt-1 text-[14px] font-[800] leading-snug text-white">
+                  {fact.value}
+                </dd>
+              </div>
+            ))}
+          </dl>
         </div>
 
-        <div className="flex flex-1 justify-end max-[900px]:w-full max-[900px]:justify-center">
+        <div className="flex flex-1 justify-end max-[900px]:w-full max-[900px]:justify-center max-[650px]:hidden">
           <OperationsConsole />
         </div>
       </div>
