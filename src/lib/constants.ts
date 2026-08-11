@@ -115,9 +115,9 @@ export interface CaseStudy {
 
 export const SITE = {
   name: "Papa Amadou Fall",
-  title: "Papa Amadou Fall | Bilingual IT Support Specialist",
+  title: "Papa Amadou Fall | Bilingual IT Support & Endpoint Specialist",
   description:
-    "Bilingual French-English IT Support Specialist in Campbell River, BC, with 5+ years of telecom troubleshooting, help desk, customer support, Microsoft 365, Windows, networking, CRM, and ticketing experience.",
+    "Bilingual French-English IT Support Specialist in Campbell River, BC, with 5+ years of desktop and endpoint support, Microsoft 365, Active Directory, networking, CRM, and ticketing experience.",
   url: "https://omadigital23.github.io/PapaAmadouFall/",
   basePath: "/PapaAmadouFall",
   github: "https://github.com/omadigital23",
@@ -125,7 +125,7 @@ export const SITE = {
   email: "fallpape199@gmail.com",
   phone: "+1 250 204 8358",
   phoneHref: "tel:+12502048358",
-  cv: "/PapaAmadouFall/assets/Papa_Amadou_Fall_IT_Support_Resume.pdf",
+  cv: "/PapaAmadouFall/assets/Papa_Amadou_Fall_Desktop_Support_Resume.pdf",
   coverLetter: "/PapaAmadouFall/assets/Papa_Amadou_Fall_IT_Support_Cover_Letter.pdf",
   profileLogo: "/PapaAmadouFall/assets/papa-amadou-fall-profile-logo.svg",
 } as const;
@@ -149,14 +149,15 @@ export const HERO = {
   eyebrow: "Campbell River, BC | French-English | Open to relocation",
   firstName: "Papa Amadou",
   lastName: "Fall",
-  kicker: "Bilingual IT Support Specialist | Help Desk Analyst | Technical Support Representative",
+  kicker:
+    "Bilingual IT Support Specialist | Desktop & Endpoint Support | Microsoft 365, Active Directory, Networking & Service Desk | French & English",
   text:
-    "I bring 5+ years of frontline technical support experience serving Videotron customers through XCM Sourcing. I combine structured remote troubleshooting, customer de-escalation, CRM/ticketing documentation, and clear French-English communication with practical web development and automation experience.",
+    "I bring 5+ years of frontline technical support experience serving Videotron customers through XCM Sourcing. I combine desktop and endpoint troubleshooting, Microsoft 365 and Active Directory fundamentals, customer de-escalation, and clear French-English communication with disciplined ticket documentation.",
 } as const;
 
 export const HERO_FACTS = [
   { label: "Experience", value: "5+ years frontline support" },
-  { label: "Core Strength", value: "Diagnose, de-escalate, document" },
+  { label: "Support Focus", value: "Desktop, endpoint & identity" },
   { label: "Languages", value: "French TCF C1/B2 | English professional" },
   { label: "Mobility", value: "BC based, open to relocation" },
 ] as const;
@@ -194,9 +195,9 @@ export const QUICK_FIT_HEADER = {
 export const QUICK_FIT: QuickFitItem[] = [
   {
     label: "Problems solved",
-    value: "Connectivity, access, devices",
+    value: "Endpoints, access, connectivity",
     detail:
-      "Internet, Wi-Fi, modem/router, mobile, telephony, account access, Windows, Microsoft 365, DNS/VPN basics, and common SaaS workflows.",
+      "Windows, macOS, mobile devices, Microsoft 365, Active Directory fundamentals, account access, Wi-Fi, modem/router, DNS/VPN basics, and common SaaS workflows.",
   },
   {
     label: "Support method",
@@ -214,7 +215,7 @@ export const QUICK_FIT: QuickFitItem[] = [
     label: "Work authorization",
     value: "Valid employer-specific permit",
     detail:
-      "Currently authorized under an employer-specific LMIA-exempt Francophone Mobility work permit. Changing employers requires the appropriate employer-supported LMIA-exempt process before starting.",
+      "Authorized to work in Canada under a valid employer-specific permit. Supporting documentation is available to verified recruiters when appropriate.",
   },
 ] as const;
 
@@ -222,7 +223,7 @@ export const PROFILE = {
   eyebrow: "Professional Profile",
   heading: "Frontline support discipline, backed by practical technical depth.",
   text:
-    "Bilingual IT Support Specialist with 5+ years of frontline technical support experience supporting Videotron customers through XCM Sourcing. Strong in remote troubleshooting, Microsoft 365, Windows/macOS, Android/iOS, TCP/IP, DNS, VPN, Wi-Fi, modem/router configuration, CRM/ticketing documentation, incident escalation, customer de-escalation, and clear French-English communication.",
+    "Bilingual IT Support Specialist with 5+ years of frontline technical support experience supporting Videotron customers through XCM Sourcing. Strong in desktop and endpoint troubleshooting, Microsoft 365, Active Directory and Microsoft Entra ID fundamentals, Windows/macOS, Android/iOS, TCP/IP, DNS, VPN, Wi-Fi, CRM/ticketing documentation, incident escalation, customer de-escalation, and clear French-English communication.",
 } as const;
 
 export const CAPABILITIES: Capability[] = [
@@ -243,9 +244,9 @@ export const CAPABILITIES: Capability[] = [
   {
     tag: "Systems",
     tagStyle: "cap-tag-systems",
-    title: "Microsoft 365 & Devices",
+    title: "Microsoft 365, Identity & Endpoints",
     description:
-      "Microsoft 365, Outlook, Teams, OneDrive, SharePoint, Windows 10/11, macOS, Android, iOS, Active Directory basics, Microsoft Entra ID basics, and Remote Desktop.",
+      "Microsoft 365, Active Directory fundamentals, Microsoft Entra ID fundamentals, Outlook, Teams, OneDrive, SharePoint, Windows 10/11, macOS, Android, iOS, and Remote Desktop.",
   },
   {
     tag: "Documentation",
@@ -545,6 +546,7 @@ export const EXPERIENCE: ExperienceItem[] = [
       "Resolved internet, Wi-Fi, modem/router, telephony, mobile service, and account access issues for residential customers. Used troubleshooting procedures to identify root causes, restore service, document cases in CRM/ticketing tools, and escalate complex incidents with clear context. Delivered bilingual French-English support while maintaining quality and customer satisfaction expectations.",
     tags: [
       { label: "Bilingual FR/EN", style: "exp-tag-bilingual" },
+      { label: "Desktop / Endpoint", style: "exp-tag-web" },
       { label: "Helpdesk / CRM", style: "exp-tag-docs" },
       { label: "Telecom", style: "exp-tag-telecom" },
       { label: "Troubleshooting", style: "exp-tag-csat" },
@@ -626,6 +628,8 @@ export const TARGET_ROLES = [
   "Technical Support Representative",
   "Bilingual IT Support Specialist",
   "IT Support Specialist",
+  "Desktop Support Technician",
+  "Endpoint Support Technician",
   "Help Desk Analyst",
   "Help Desk Technician",
   "Service Desk Analyst",
@@ -658,7 +662,7 @@ export const CONTACT = {
   eyebrow: "Contact",
   heading: "Available to interview for bilingual technical support roles.",
   text:
-    "Based in Campbell River, BC, with 5+ years of technical support experience. Open to relocation for the right IT Support, Help Desk, Service Desk, SaaS Support, Customer Support Engineer, or strongly aligned junior full-stack opportunity.",
+    "Based in Campbell River, BC, with 5+ years of technical, desktop and endpoint support experience. Open to relocation for the right IT Support, Help Desk, Service Desk, Desktop Support, Endpoint Support, SaaS Support, or Customer Support Engineer opportunity.",
 } as const;
 
 export const COVER_LETTER = {

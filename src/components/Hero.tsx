@@ -43,8 +43,8 @@ export default function Hero() {
             {HERO.text}
           </p>
           <p className="mt-4 hidden max-w-[590px] text-[15px] leading-relaxed text-white/78 max-[560px]:block">
-            5+ years of bilingual frontline support, remote troubleshooting, customer de-escalation,
-            and CRM/ticketing documentation.
+            5+ years of bilingual desktop and endpoint support, Microsoft 365, Active Directory,
+            customer de-escalation, and CRM/ticketing documentation.
           </p>
 
           <div className="mt-6 flex flex-wrap gap-3" aria-label="Primary links">

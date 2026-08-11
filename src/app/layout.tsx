@@ -25,6 +25,9 @@ export const metadata: Metadata = {
     "IT Support",
     "Help Desk",
     "Microsoft 365 Support",
+    "Active Directory Fundamentals",
+    "Desktop Support",
+    "Endpoint Support",
     "Windows Support",
     "Level 1 Level 2 Support",
     "SaaS Support",
@@ -67,7 +70,7 @@ const jsonLd = {
   name: "Papa Amadou Fall",
   url: SITE.url,
   email: SITE.email,
-  jobTitle: "Bilingual IT Support Specialist",
+  jobTitle: "Bilingual IT Support & Endpoint Specialist",
   telephone: SITE.phone,
   knowsLanguage: [
     { "@type": "Language", name: "French", alternateName: "fr" },
